@@ -1,1 +1,22 @@
-nuthin trite Oma bout
+<html>
+<head>
+<title>Should you be here?</title>
+</head>
+<script type="text/javascript" language="JavaScript">
+
+NumberOfImagesToRotate = 4;
+
+
+FirstPart = '<img src="logo';
+LastPart = '.new.jpg" align=left>';
+
+function printImage() {
+var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+document.write(FirstPart + r + LastPart);
+}
+</script>
+
+<script type="text/javascript" language="JavaScript">
+printImage();
+</script>
+</html>
