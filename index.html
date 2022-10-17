@@ -20,12 +20,7 @@ g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <body>
 
 
-<table><tr><td>
-<picture>
- <source media="(min-width: 800px)" srcset="elx.jpg">
- <source media="(min-width: 450px)" srcset="elx1.jpg">
-<IMG width=50% src="elx.jpg">
-</picture></td>
+<table><tr>
 <td>
 <table>
 <tr><td><H3> Prof. Martin Speight</H3></td></tr>
@@ -50,7 +45,28 @@ Leeds LS2 9JT, UK.</td>
 <td><A HREF="https://leeds-geometry.github.io">Differential Geometry</A></td>
 </tr>       
 </TABLE></td></tr>
-</TABLE></td></tr>
+</TABLE></td>
+
+<td>
+<picture>
+<script type="text/javascript" language="JavaScript">
+NumberOfImagesToRotate = 4;
+FirstPart = '<img width=10% src="./images/me';
+LastPart = '.jpg" align=center>';
+
+function printImage() {
+var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+document.write(FirstPart + r + LastPart);
+}
+</script>
+
+<script type="text/javascript" language="JavaScript">
+printImage();
+</script>
+
+</picture></td>
+
+</tr>
 </table>
 
 <BR><HR><BR>
