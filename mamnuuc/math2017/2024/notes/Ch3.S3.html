@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.3 Darboux’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S5.html" title="3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>The Interior Extremum Theorem</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>The Mean Value Theorem</a></li>
+<li data-level="3.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="3.3 Darboux’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>Darboux’s Theorem</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>The Extended Mean Value Theorem and L’Hospital’s Rule</a></li>
+<li data-level="3.5" data-path="Ch3.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S5.html" title="3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.5 </span></b>Higher derivatives and Taylor’s Theorem</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Darboux’s Theorem</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">3.3</span> Darboux’s Theorem</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If a function </span><math id="p1.m1" class="ltx_Math" alttext="f:D\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">D</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:D\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is differentiable, it is continuous (Proposition </span><a href="Ch2.S1.html#Thmthm8a" title="Proposition 2.8 ‣ 2.1 The main definition ‣ Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">2.8</span></a><span class="ltx_text" style="font-size:120%;">), and its
+derivative defines a function </span><math id="p1.m2" class="ltx_Math" alttext="f^{\prime}:D\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">D</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}:D\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Note that it does </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">not</span><span class="ltx_text" style="font-size:120%;"> follow that </span><math id="p1.m3" class="ltx_Math" alttext="f^{\prime}:D\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">D</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}:D\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is
+continuous! In fact, Example </span><a href="Ch3.S2.html#Thmthm14b" title="Example 3.14 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.14</span></a><span class="ltx_text" style="font-size:120%;"> provides a counterexample: we saw that this function is
+differentiable everywhere and has </span><math id="p1.m4" class="ltx_Math" alttext="f^{\prime}(0)=1" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(0)=1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. We also observed that, for any positive integer </span><math id="p1.m5" class="ltx_Math" alttext="m" display="inline"><semantics><mi mathsize="120%">m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+</span><math id="p1.m6" class="ltx_Math" alttext="f^{\prime}(x_{m})=-1" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%">x</mi><mi mathsize="120%">m</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{m})=-1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, where </span><math id="p1.m7" class="ltx_Math" alttext="x_{m}=1/(2\pi m)" display="inline"><semantics><mrow><msub><mi mathsize="120%">x</mi><mi mathsize="120%">m</mi></msub><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">π</mi><mo>⁢</mo><mi mathsize="120%">m</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x_{m}=1/(2\pi m)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Clearly </span><math id="p1.m8" class="ltx_Math" alttext="x_{m}\rightarrow 0" display="inline"><semantics><mrow><msub><mi mathsize="120%">x</mi><mi mathsize="120%">m</mi></msub><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">x_{m}\rightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, but </span><math id="p1.m9" class="ltx_Math" alttext="f^{\prime}(x_{m})\nrightarrow f^{\prime}(0)=1" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%">x</mi><mi mathsize="120%">m</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" stretchy="false">↛</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x_{m})\nrightarrow f^{\prime}(0)=1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, so </span><math id="p1.m10" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is
+</span><span class="ltx_text ltx_font_italic" style="font-size:120%;">discontinuous</span><span class="ltx_text" style="font-size:120%;"> at </span><math id="p1.m11" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">So, the </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">derivative</span><span class="ltx_text" style="font-size:120%;"> of a differentiable function </span><math id="p2.m1" class="ltx_Math" alttext="f:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, may fail to be a continuous function.
+Nonetheless, </span><math id="p2.m2" class="ltx_Math" alttext="f^{\prime}:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is guaranteed to satisfy one of the key properties of continuous
+functions on </span><math id="p2.m3" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">: it has the </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">intermediate value property</span><span class="ltx_text" style="font-size:120%;">. That is, given any number
+</span><math id="p2.m4" class="ltx_Math" alttext="k" display="inline"><semantics><mi mathsize="120%">k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> between </span><math id="p2.m5" class="ltx_Math" alttext="f^{\prime}(a)" display="inline"><semantics><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(a)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p2.m6" class="ltx_Math" alttext="f^{\prime}(b)" display="inline"><semantics><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, there exists </span><math id="p2.m7" class="ltx_Math" alttext="c\in[a,b]" display="inline"><semantics><mrow><mi mathsize="120%">c</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">c\in[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that </span><math id="p2.m8" class="ltx_Math" alttext="f^{\prime}(c)=k" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mi mathsize="120%">k</mi></mrow><annotation encoding="application/x-tex">f^{\prime}(c)=k</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. This holds even though, in general, </span><math id="p2.m9" class="ltx_Math" alttext="f^{\prime}" display="inline"><semantics><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> may </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">fail</span><span class="ltx_text" style="font-size:120%;"> to be a continuous function!</span></p>
+</div>
+<div id="Thmthm15b" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 3.15</span></span><span class="ltx_text ltx_font_bold"> </span>(Darboux’s Theorem)</h6>
+<div id="Thmthm15b.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm15b.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> be differentiable on <math id="Thmthm15b.p1.m2" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math> and <math id="Thmthm15b.p1.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> be any number between
+<math id="Thmthm15b.p1.m4" class="ltx_Math" alttext="f^{\prime}(a)" display="inline"><semantics><mrow><msup><mi>f</mi><mo mathvariant="normal">′</mo></msup><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>a</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(a)</annotation></semantics></math> and <math id="Thmthm15b.p1.m5" class="ltx_Math" alttext="f^{\prime}(b)" display="inline"><semantics><mrow><msup><mi>f</mi><mo mathvariant="normal">′</mo></msup><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(b)</annotation></semantics></math>. Then there exists <math id="Thmthm15b.p1.m6" class="ltx_Math" alttext="c\in[a,b]" display="inline"><semantics><mrow><mi>c</mi><mo mathvariant="normal">∈</mo><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c\in[a,b]</annotation></semantics></math> such that <math id="Thmthm15b.p1.m7" class="ltx_Math" alttext="f^{\prime}(c)=k" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mo mathvariant="normal">′</mo></msup><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>c</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">f^{\prime}(c)=k</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If </span><math id="p3.m1" class="ltx_Math" alttext="k=f^{\prime}(a)" display="inline"><semantics><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">=</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">k=f^{\prime}(a)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> we may take </span><math id="p3.m2" class="ltx_Math" alttext="c=a" display="inline"><semantics><mrow><mi mathsize="120%">c</mi><mo mathsize="120%">=</mo><mi mathsize="120%">a</mi></mrow><annotation encoding="application/x-tex">c=a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. If </span><math id="p3.m3" class="ltx_Math" alttext="k=f^{\prime}(b)" display="inline"><semantics><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">=</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">k=f^{\prime}(b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> we may take </span><math id="p3.m4" class="ltx_Math" alttext="c=b" display="inline"><semantics><mrow><mi mathsize="120%">c</mi><mo mathsize="120%">=</mo><mi mathsize="120%">b</mi></mrow><annotation encoding="application/x-tex">c=b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. It remains to consider the cases (i) </span><math id="p3.m5" class="ltx_Math" alttext="f^{\prime}(a)&lt;k&lt;f^{\prime}(b)" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">&lt;</mo><mi mathsize="120%">k</mi><mo mathsize="120%">&lt;</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(a)&lt;k&lt;f^{\prime}(b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and
+(ii) </span><math id="p3.m6" class="ltx_Math" alttext="f^{\prime}(b)&lt;k&lt;f^{\prime}(a)" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">&lt;</mo><mi mathsize="120%">k</mi><mo mathsize="120%">&lt;</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f^{\prime}(b)&lt;k&lt;f^{\prime}(a)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. In case (i), let </span><math id="p3.m7" class="ltx_Math" alttext="g(x)=kx-f(x)" display="inline"><semantics><mrow><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">k</mi><mo>⁢</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">g(x)=kx-f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. This is differentiable, hence continuous, on </span><math id="p3.m8" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so, by the Extreme Value Theorem, it attains a maximum somewhere on </span><math id="p3.m9" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Now </span><math id="p3.m10" class="ltx_Math" alttext="g^{\prime}(a)=k-f^{\prime}(a)&gt;0" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">g</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">−</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(a)=k-f^{\prime}(a)&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so the maximum can’t be at </span><math id="p3.m11" class="ltx_Math" alttext="a" display="inline"><semantics><mi mathsize="120%">a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (Proposition </span><a href="Ch3.S1.html#Thmthm4b" title="Proposition 3.4 ‣ 3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.4</span></a><span class="ltx_text" style="font-size:120%;">). Similarly, </span><math id="p3.m12" class="ltx_Math" alttext="g^{\prime}(b)=k-f^{\prime}(b)&lt;0" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">g</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">−</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">&lt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(b)=k-f^{\prime}(b)&lt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so
+the maximum can’t be at </span><math id="p3.m13" class="ltx_Math" alttext="b" display="inline"><semantics><mi mathsize="120%">b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (Proposition </span><a href="Ch3.S1.html#Thmthm4b" title="Proposition 3.4 ‣ 3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.4</span></a><span class="ltx_text" style="font-size:120%;"> again). Hence, the maximum is attained at some interior point </span><math id="p3.m14" class="ltx_Math" alttext="c\in(a,b)" display="inline"><semantics><mrow><mi mathsize="120%">c</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">c\in(a,b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But then </span><math id="p3.m15" class="ltx_Math" alttext="g^{\prime}(c)=0" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">g</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(c)=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> by the Interior Extremum Theorem, and </span><math id="p3.m16" class="ltx_Math" alttext="g^{\prime}(c)=k-f^{\prime}(c)" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">g</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">−</mo><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">g^{\prime}(c)=k-f^{\prime}(c)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, which completes case (i). In case (ii), let </span><math id="p3.m17" class="ltx_Math" alttext="\widetilde{f}(x)=-f(x)" display="inline"><semantics><mrow><mrow><mover accent="true"><mi mathsize="120%">f</mi><mo mathsize="120%">~</mo></mover><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\widetilde{f}(x)=-f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Then </span><math id="p3.m18" class="ltx_Math" alttext="\widetilde{f}" display="inline"><semantics><mover accent="true"><mi mathsize="120%">f</mi><mo mathsize="120%">~</mo></mover><annotation encoding="application/x-tex">\widetilde{f}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is differentiable on </span><math id="p3.m19" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and
+</span><math id="p3.m20" class="ltx_Math" alttext="\widetilde{f}^{\prime}(a)&lt;-k&lt;\widetilde{f}^{\prime}(b)" display="inline"><semantics><mrow><mrow><msup><mover accent="true"><mi mathsize="120%">f</mi><mo mathsize="120%">~</mo></mover><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">&lt;</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">k</mi></mrow><mo mathsize="120%">&lt;</mo><mrow><msup><mover accent="true"><mi mathsize="120%">f</mi><mo mathsize="120%">~</mo></mover><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\widetilde{f}^{\prime}(a)&lt;-k&lt;\widetilde{f}^{\prime}(b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so, by part (i), there exists </span><math id="p3.m21" class="ltx_Math" alttext="c\in(a,b)" display="inline"><semantics><mrow><mi mathsize="120%">c</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">c\in(a,b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that </span><math id="p3.m22" class="ltx_Math" alttext="\widetilde{f}^{\prime}(c)=-k" display="inline"><semantics><mrow><mrow><msup><mover accent="true"><mi mathsize="120%">f</mi><mo mathsize="120%">~</mo></mover><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">k</mi></mrow></mrow><annotation encoding="application/x-tex">\widetilde{f}^{\prime}(c)=-k</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But then </span><math id="p3.m23" class="ltx_Math" alttext="f^{\prime}(c)=k" display="inline"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">c</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mi mathsize="120%">k</mi></mrow><annotation encoding="application/x-tex">f^{\prime}(c)=k</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+∎</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">So the function</span></p>
+<div id="Ch3.Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex25.m1" class="ltx_Math" alttext="g:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad g(x)=\left\{\begin{array}[]{cc}1+%
+4x\sin(1/x)-2\cos(1/x)&amp;\mbox{if $x\neq 0$}\\
+1&amp;\mbox{if $x=0$}\end{array}\right." display="block"><semantics><mrow><mi mathsize="120%">g</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">4</mn><mo>⁢</mo><mi mathsize="120%">x</mi><mo lspace="0.167em">⁢</mo><mrow><mi mathsize="120%">sin</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo mathsize="120%">−</mo><mrow><mn mathsize="120%">2</mn><mo lspace="0.167em">⁢</mo><mrow><mi mathsize="120%">cos</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mtd><mtd><mrow><mtext mathsize="120%">if </mtext><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">≠</mo><mn mathsize="120%">0</mn></mrow></mrow></mtd></mtr><mtr><mtd><mn mathsize="120%">1</mn></mtd><mtd><mrow><mtext mathsize="120%">if </mtext><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow></mrow></mtd></mtr></mtable><mi></mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">g:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad g(x)=\left\{\begin{array}[]{cc}1+%
+4x\sin(1/x)-2\cos(1/x)&amp;\mbox{if $x\neq 0$}\\
+1&amp;\mbox{if $x=0$}\end{array}\right.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">has the intermediate value property on every interval (by Darboux’s Theorem, since it’s the derivative of the differentiable function in Example </span><a href="Ch3.S2.html#Thmthm14b" title="Example 3.14 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.14</span></a><span class="ltx_text" style="font-size:120%;">) despite being discontinuous at </span><math id="p4.m1" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

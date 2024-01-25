@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch2.Sx1.html" title="Summary ‣ Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S3.html" title="3.3 Darboux’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch3.S5.html" title="3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_chapter ltx_ref_self  chapter active">
+<a href="" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>The Interior Extremum Theorem</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>The Mean Value Theorem</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="3.3 Darboux’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>Darboux’s Theorem</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>The Extended Mean Value Theorem and L’Hospital’s Rule</a></li>
+<li data-level="3.5" data-path="Ch3.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S5.html" title="3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.5 </span></b>Higher derivatives and Taylor’s Theorem</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Functions differentiable on an interval</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_chapter ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_chapter" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_chapter header-section-number">Chapter 3</span> Functions differentiable on an interval</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Two applications of differential calculus are
+particularly pervasive in the natural
+sciences. In one, we use the derivative of a function to deduce its maximum
+(or minimum) value and the input which produces that value. In the
+second, we are given information, not about the function itself, but about
+its derivative (which is often interpreted as a “rate of change”
+with respect to time). We then seek to reconstruct the function itself
+from this information. These two applications rely fundamentally
+on the Interior Extremum Theorem, and the Mean Value Theorem, respectively,
+and the main purpose of this section is to state and prove these.
+Both are statements concerning functions
+which are differentiable (at least) on an open interval </span><math id="p1.m1" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. The
+functions in question may be differentiable elsewhere too (perhaps on the whole
+of </span><math id="p1.m2" class="ltx_Math" alttext="{\mathbb{R}}" display="inline"><semantics><mi mathsize="120%">ℝ</mi><annotation encoding="application/x-tex">{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, in fact), so it’s important when you read “</span><math id="p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is differentiable
+on </span><math id="p1.m4" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">” not to add the unwarranted assumption “and only on </span><math id="p1.m5" class="ltx_Math" alttext="(a,b)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">”.</span></p>
+</div>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S1.html" title="3.1 The Interior Extremum Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>The Interior Extremum Theorem</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S2.html" title="3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>The Mean Value Theorem</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S3.html" title="3.3 Darboux’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Darboux’s Theorem</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S4.html" title="3.4 The Extended Mean Value Theorem and L’Hospital’s Rule ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>The Extended Mean Value Theorem and L’Hospital’s Rule</span></a></li>
+</ol></nav>
+<nav class="ltx_TOC">
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry"><a href="Ch3.S5.html" title="3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Higher derivatives and Taylor’s Theorem</span></a></li>
+</ol></nav>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.Sx1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S1.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

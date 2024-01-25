@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch5.S2.html" title="5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch5.S1.html" title="5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch5.S2.html" title="5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="5.1" data-path="Ch5.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S1.html" title="5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.1 </span></b>The first form and the Intermediate Value Theorem</a></li>
+<li data-level="5.2" data-path="Ch5.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S2.html" title="5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.2 </span></b>The second form and a practical method for computing integrals</a></li>
+<li data-level="5.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.3 </span></b>The natural logarithm</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>The natural logarithm</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">5.3</span> The natural logarithm</h1>
+
+<div id="Thmthm8d" class="ltx_theorem ltx_theorem_defn">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definition 5.8</span></span></h6>
+<div id="Thmthm8d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">(natural) logarithm</span><span class="ltx_text" style="font-size:120%;"> is the function</span></p>
+<div id="Ch5.Ex28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex28.m1" class="ltx_Math" alttext="\ln:(0,\infty)\rightarrow{\mathbb{R}},\qquad\ln x=\int_{1}^{x}\frac{1}{t}dt." display="block"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">1</mn><mi mathsize="120%">x</mi></msubsup><mrow><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">t</mi></mfrac><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">t</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\ln:(0,\infty)\rightarrow{\mathbb{R}},\qquad\ln x=\int_{1}^{x}\frac{1}{t}dt.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:120%;">Remarks</span><span class="ltx_text" style="font-size:120%;"></span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The function </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="f(t)=1/t" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">t</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">t</mi></mrow></mrow><annotation encoding="application/x-tex">f(t)=1/t</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous on </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="(0,\infty)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(0,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and hence
+Riemann integrable on </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="[1,x]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[1,x]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (if </span><math id="I1.i1.p1.m4" class="ltx_Math" alttext="x\geq 1" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">≥</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">x\geq 1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">) or </span><math id="I1.i1.p1.m5" class="ltx_Math" alttext="[x,1]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[x,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (if </span><math id="I1.i1.p1.m6" class="ltx_Math" alttext="0&lt;x&lt;1" display="inline"><semantics><mrow><mn mathsize="120%">0</mn><mo mathsize="120%">&lt;</mo><mi mathsize="120%">x</mi><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">0&lt;x&lt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">), so the
+function </span><math id="I1.i1.p1.m7" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is well-defined (Theorem </span><a href="Ch4.S4.html#Thmthm21c" title="Theorem 4.21 ‣ 4.4 A sequential characterization of integrability ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">4.21</span></a><span class="ltx_text" style="font-size:120%;">).</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is differentiable, by the Fundamental Theorem of the Calculus version 1 (Theorem </span><a href="Ch5.S1.html#Thmthm1e" title="Theorem 5.1 (Fundamental Theorem of the Calculus version 1) ‣ 5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.1</span></a><span class="ltx_text" style="font-size:120%;">), and</span></p>
+<div id="Ch5.Ex29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex29.m1" class="ltx_Math" alttext="\ln^{\prime}(x)=\frac{1}{x}." display="block"><semantics><mrow><mrow><mrow><msup><mi mathsize="120%">ln</mi><mo mathsize="120%">′</mo></msup><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">x</mi></mfrac></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\ln^{\prime}(x)=\frac{1}{x}.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">It follows immediately from the definition that</span></p>
+<div id="Ch5.Ex30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex30.m1" class="ltx_Math" alttext="\ln 1=\int_{1}^{1}\frac{1}{t}dt=0." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">1</mn><mn mathsize="120%">1</mn></msubsup><mrow><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">t</mi></mfrac><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">t</mi></mrow></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\ln 1=\int_{1}^{1}\frac{1}{t}dt=0.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The logarithm function obeys a very useful identity.</span></p>
+</div>
+<div id="Thmthm9d" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposition 5.9</span></span></h6>
+<div id="Thmthm9d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">For all <math id="Thmthm9d.p1.m1" class="ltx_Math" alttext="x,y\in(0,\infty)" display="inline"><semantics><mrow><mrow><mi>x</mi><mo mathvariant="normal">,</mo><mi>y</mi></mrow><mo mathvariant="normal">∈</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mi mathvariant="normal">∞</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x,y\in(0,\infty)</annotation></semantics></math>, <math id="Thmthm9d.p1.m2" class="ltx_Math" alttext="\ln(xy)=\ln x+\ln y" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo mathvariant="italic">⁡</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><mi>x</mi><mo mathvariant="italic">⁢</mo><mi>y</mi></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">=</mo><mrow><mrow><mi mathvariant="normal">ln</mi><mo lspace="0.167em" mathvariant="italic">⁡</mo><mi>x</mi></mrow><mo mathvariant="normal">+</mo><mrow><mi mathvariant="normal">ln</mi><mo lspace="0.167em" mathvariant="italic">⁡</mo><mi>y</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\ln(xy)=\ln x+\ln y</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Choose and fix </span><math id="p3.m1" class="ltx_Math" alttext="y\in(0,\infty)" display="inline"><semantics><mrow><mi mathsize="120%">y</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">y\in(0,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and consider the function</span></p>
+<div id="Ch5.Ex31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex31.m1" class="ltx_Math" alttext="f:(0,\infty)\rightarrow{\mathbb{R}},\qquad f(x)=\ln(xy)-\ln x-\ln y." display="block"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">ln</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">x</mi><mo>⁢</mo><mi mathsize="120%">y</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">y</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">f:(0,\infty)\rightarrow{\mathbb{R}},\qquad f(x)=\ln(xy)-\ln x-\ln y.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">By the Chain Rule,</span></p>
+<div id="Ch5.Ex32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex32.m1" class="ltx_Math" alttext="f^{\prime}(x)=\frac{y}{xy}-\frac{1}{x}=0" display="block"><semantics><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mfrac><mi mathsize="120%">y</mi><mrow><mi mathsize="120%">x</mi><mo>⁢</mo><mi mathsize="120%">y</mi></mrow></mfrac><mo mathsize="120%">−</mo><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">x</mi></mfrac></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=\frac{y}{xy}-\frac{1}{x}=0</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">so </span><math id="p3.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is constant (Proposition </span><a href="Ch3.S2.html#Thmthm11b" title="Proposition 3.11 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.11</span></a><span class="ltx_text" style="font-size:120%;">). Hence, for all </span><math id="p3.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+</span><math id="p3.m4" class="ltx_Math" alttext="f(x)=f(1)=\ln y-0-\ln y=0" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">y</mi></mrow><mo mathsize="120%">−</mo><mn mathsize="120%">0</mn><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">y</mi></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f(x)=f(1)=\ln y-0-\ln y=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+∎</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">A second useful identity quickly follows from this.</span></p>
+</div>
+<div id="Thmthm10d" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposition 5.10</span></span></h6>
+<div id="Thmthm10d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">For all <math id="Thmthm10d.p1.m1" class="ltx_Math" alttext="x\in(0,\infty)" display="inline"><semantics><mrow><mi>x</mi><mo mathvariant="normal">∈</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mi mathvariant="normal">∞</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(0,\infty)</annotation></semantics></math> and <math id="Thmthm10d.p1.m2" class="ltx_Math" alttext="n\in{\mathbb{Z}}" display="inline"><semantics><mrow><mi>n</mi><mo mathvariant="normal">∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">n\in{\mathbb{Z}}</annotation></semantics></math>, <math id="Thmthm10d.p1.m3" class="ltx_Math" alttext="\ln x^{n}=n\ln x" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo lspace="0.167em" mathvariant="italic">⁡</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo mathvariant="normal">=</mo><mrow><mi>n</mi><mo lspace="0.167em" mathvariant="italic">⁢</mo><mrow><mi mathvariant="normal">ln</mi><mo lspace="0.167em" mathvariant="italic">⁡</mo><mi>x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\ln x^{n}=n\ln x</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Exercise. (</span><span class="ltx_text ltx_font_italic" style="font-size:120%;">Hint</span><span class="ltx_text" style="font-size:120%;">: proof by induction.)
+If you get stuck, watch this
+</span><a href="https://web.microsoftstream.com/video/1152682a-35fb-48eb-94f9-c06597ba4014" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;">
+
+∎</span></p>
+</div>
+</div>
+<div id="Thmthm11d" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposition 5.11</span></span></h6>
+<div id="Thmthm11d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">The function <math id="Thmthm11d.p1.m1" class="ltx_Math" alttext="\ln:(0,\infty)\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathvariant="normal">ln</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mi mathvariant="normal">∞</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\ln:(0,\infty)\rightarrow{\mathbb{R}}</annotation></semantics></math> is smooth,
+strictly increasing, and bijective.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let </span><math id="p6.m1" class="ltx_Math" alttext="f:(0,\infty)\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:(0,\infty)\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p6.m2" class="ltx_Math" alttext="f(x)=1/x" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=1/x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+We have noted that </span><math id="p6.m3" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is differentiable
+with derivative </span><math id="p6.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But </span><math id="p6.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is
+smooth, so </span><math id="p6.m6" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is smooth. Also, for all </span><math id="p6.m7" class="ltx_Math" alttext="x\in(0,\infty)" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(0,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+</span><math id="p6.m8" class="ltx_Math" alttext="f(x)&gt;0" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f(x)&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+so </span><math id="p6.m9" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is strictly increasing, and hence injective
+(Proposition </span><a href="Ch3.S2.html#Thmthm11b" title="Proposition 3.11 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.11</span></a><span class="ltx_text" style="font-size:120%;">). It remains to show that </span><math id="p6.m10" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is surjective.</span></p>
+</div>
+<div id="p7" class="ltx_para ltx_align_center">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="pictures/log.png" id="p7.g1" class="ltx_graphics ltx_img_landscape" width="280" height="210" alt="[Uncaptioned image]"></div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">For each </span><math id="p8.m1" class="ltx_Math" alttext="n\in{\mathbb{Z}}^{+}" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">∈</mo><msup><mi mathsize="120%">ℤ</mi><mo mathsize="120%">+</mo></msup></mrow><annotation encoding="application/x-tex">n\in{\mathbb{Z}}^{+}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p8.m2" class="ltx_Math" alttext="n\geq 2" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">≥</mo><mn mathsize="120%">2</mn></mrow><annotation encoding="application/x-tex">n\geq 2</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, let </span><math id="p8.m3" class="ltx_Math" alttext="\mathscr{D}_{n}" display="inline"><semantics><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mi mathsize="120%">n</mi></msub><annotation encoding="application/x-tex">\mathscr{D}_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> be the regular dissection
+of </span><math id="p8.m4" class="ltx_Math" alttext="[1,n]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mi mathsize="120%">n</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[1,n]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> of size </span><math id="p8.m5" class="ltx_Math" alttext="(n-1)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(n-1)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, that is</span></p>
+<div id="Ch5.Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex33.m1" class="ltx_Math" alttext="\mathscr{D}_{n}=\{1,2,\ldots,n\}." display="block"><semantics><mrow><mrow><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mn mathsize="120%">2</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><mi mathsize="120%">n</mi><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\mathscr{D}_{n}=\{1,2,\ldots,n\}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Then</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx52" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch5.Ex34"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch5.Ex34.m1" class="ltx_Math" alttext="\displaystyle\ln n=\int_{1}^{n}f" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">=</mo><mrow><mstyle displaystyle="true"><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mstyle><mi mathsize="120%">f</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\ln n=\int_{1}^{n}f</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch5.Ex34.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo mathsize="120%">≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch5.Ex34.m3" class="ltx_math_unparsed" alttext="\displaystyle l_{\mathscr{D}_{n}}(f)=\sum_{j=1}^{n-1}(1)f(j+1)=\sum_{k=2}^{n}%
+\frac{1}{k}=:s_{n}," display="inline"><semantics><mrow><msub><mi mathsize="120%">l</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mi mathsize="120%">n</mi></msub></msub><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">=</mo><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></munderover></mstyle><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">f</mi><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">j</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">=</mo><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">=</mo><mn mathsize="120%">2</mn></mrow><mi mathsize="120%">n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">k</mi></mfrac></mstyle><mo mathsize="120%" rspace="0em">=</mo><mo mathsize="120%" rspace="0.278em">:</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle l_{\mathscr{D}_{n}}(f)=\sum_{j=1}^{n-1}(1)f(j+1)=\sum_{k=2}^{n}%
+\frac{1}{k}=:s_{n},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">where we have used the fact that </span><math id="p8.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is monotonically decreasing (the case </span><math id="p8.m7" class="ltx_Math" alttext="n=8" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">8</mn></mrow><annotation encoding="application/x-tex">n=8</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is depicted above).
+The sequence </span><math id="p8.m8" class="ltx_Math" alttext="(s_{n})" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(s_{n})</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is unbounded above (Example </span><a href="Ch1.S2.html#Thmthm21" title="Counterexample 1.21 (the Harmonic Series) ‣ 1.2 Convergence of sequences and the Cauchy property ‣ Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">1.21</span></a><span class="ltx_text" style="font-size:120%;">),
+so the sequence </span><math id="p8.m9" class="ltx_Math" alttext="\ln n" display="inline"><semantics><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">n</mi></mrow><annotation encoding="application/x-tex">\ln n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is also unbounded above. Hence, given any </span><math id="p8.m10" class="ltx_Math" alttext="K\geq 0" display="inline"><semantics><mrow><mi mathsize="120%">K</mi><mo mathsize="120%">≥</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">K\geq 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+there exists </span><math id="p8.m11" class="ltx_Math" alttext="n\in{\mathbb{Z}}^{+}" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">∈</mo><msup><mi mathsize="120%">ℤ</mi><mo mathsize="120%">+</mo></msup></mrow><annotation encoding="application/x-tex">n\in{\mathbb{Z}}^{+}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that </span><math id="p8.m12" class="ltx_Math" alttext="\ln n&gt;K" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">&gt;</mo><mi mathsize="120%">K</mi></mrow><annotation encoding="application/x-tex">\ln n&gt;K</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But </span><math id="p8.m13" class="ltx_Math" alttext="\ln 1=0" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">\ln 1=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and
+</span><math id="p8.m14" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous (since it is differentiable) so, by the Intermediate
+Value Theorem, there exists </span><math id="p8.m15" class="ltx_Math" alttext="x\in[1,n]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mi mathsize="120%">n</mi><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[1,n]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that </span><math id="p8.m16" class="ltx_Math" alttext="\ln x=K" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">=</mo><mi mathsize="120%">K</mi></mrow><annotation encoding="application/x-tex">\ln x=K</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Hence, </span><math id="p8.m17" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+takes all non-negative values. Let </span><math id="p8.m18" class="ltx_Math" alttext="L&lt;0" display="inline"><semantics><mrow><mi mathsize="120%">L</mi><mo mathsize="120%">&lt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">L&lt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. As we just showed, there exists
+</span><math id="p8.m19" class="ltx_Math" alttext="x\in[1,\infty)" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[1,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that </span><math id="p8.m20" class="ltx_Math" alttext="\ln x=-L" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">L</mi></mrow></mrow><annotation encoding="application/x-tex">\ln x=-L</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But then,
+by Proposition </span><a href="#Thmthm10d" title="Proposition 5.10 ‣ 5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.10</span></a><span class="ltx_text" style="font-size:120%;">, </span><math id="p8.m21" class="ltx_Math" alttext="\ln(1/x)=-\ln x=L" display="inline"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%" rspace="0.167em">−</mo><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow></mrow><mo mathsize="120%">=</mo><mi mathsize="120%">L</mi></mrow><annotation encoding="application/x-tex">\ln(1/x)=-\ln x=L</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. So </span><math id="p8.m22" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> also takes all
+negative values, and we conclude that </span><math id="p8.m23" class="ltx_Math" alttext="\ln:(0,\infty)\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">ln</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\ln:(0,\infty)\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is surjective,
+hence bijective.
+∎</span></p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">It is common to define </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">natural logarithm</span><span class="ltx_text" style="font-size:120%;"> to mean
+the inverse function to the exponential function. Definition </span><a href="#Thmthm8d" title="Definition 5.8 ‣ 5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.8</span></a><span class="ltx_text" style="font-size:120%;"> has no obvious connexion with the
+exponential function (which as we will see, is defined using a convergent
+power series), so this coincidence of terminology will need to be justified.</span></p>
+</div>
+<section id="SSx1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection" style="font-size:120%;">Summary</h2>
+
+<div id="SSx1.p1" class="ltx_para">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">There is an important link between Riemann integrals and derivatives,
+given by the </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">Fundamental Theorem of the Calculus</span><span class="ltx_text" style="font-size:120%;">:</span></p>
+<ul id="I2.i1.I1" class="ltx_itemize">
+<li id="I2.i1.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i1.I1.ix1.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i1.I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Version 1: if </span><math id="I2.i1.I1.ix1.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous and </span><math id="I2.i1.I1.ix1.p1.m2" class="ltx_Math" alttext="F(x)=\int_{a}^{x}f" display="inline"><semantics><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">x</mi></msubsup><mi mathsize="120%">f</mi></mrow></mrow><annotation encoding="application/x-tex">F(x)=\int_{a}^{x}f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, then </span><math id="I2.i1.I1.ix1.p1.m3" class="ltx_Math" alttext="F^{\prime}=f" display="inline"><semantics><mrow><msup><mi mathsize="120%">F</mi><mo mathsize="120%">′</mo></msup><mo mathsize="120%">=</mo><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">F^{\prime}=f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</li>
+<li id="I2.i1.I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i1.I1.ix2.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i1.I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Version 2: if </span><math id="I2.i1.I1.ix2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous and </span><math id="I2.i1.I1.ix2.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi mathsize="120%">F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is some antiderivative of </span><math id="I2.i1.I1.ix2.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+(that is, a function satisfying </span><math id="I2.i1.I1.ix2.p1.m4" class="ltx_Math" alttext="F^{\prime}=f" display="inline"><semantics><mrow><msup><mi mathsize="120%">F</mi><mo mathsize="120%">′</mo></msup><mo mathsize="120%">=</mo><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">F^{\prime}=f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">), then </span><math id="I2.i1.I1.ix2.p1.m5" class="ltx_Math" alttext="\int_{a}^{b}f=F(b)-F(a)" display="inline"><semantics><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f=F(b)-F(a)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Version 2 of the Fundamental Theorem of the Calculus provides
+a flexible and convenient method for computing many Riemann integrals.</span></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">natural logarithm</span><span class="ltx_text" style="font-size:120%;"> function is</span></p>
+<div id="Ch5.Ex35" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex35.m1" class="ltx_Math" alttext="\ln:(0,\infty)\rightarrow{\mathbb{R}},\qquad\ln x=\int_{1}^{x}\frac{1}{t}dt." display="block"><semantics><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">1</mn><mi mathsize="120%">x</mi></msubsup><mrow><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">t</mi></mfrac><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">t</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\ln:(0,\infty)\rightarrow{\mathbb{R}},\qquad\ln x=\int_{1}^{x}\frac{1}{t}dt.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="\ln" display="inline"><semantics><mi mathsize="120%">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is smooth, increasing, and bijective.</span></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">For all </span><math id="I2.i5.p1.m1" class="ltx_Math" alttext="x,y\in(0,\infty)" display="inline"><semantics><mrow><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi></mrow><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">x,y\in(0,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch5.Ex36" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex36.m1" class="ltx_Math" alttext="\ln(xy)=\ln x+\ln y." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">ln</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">x</mi><mo>⁢</mo><mi mathsize="120%">y</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">+</mo><mrow><mi mathsize="120%">ln</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">y</mi></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\ln(xy)=\ln x+\ln y.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch5.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis‣ Chapter 7 Power series ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch7.S1.html" title="7.1 Convergence tests for series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch7.S3.html" title="7.3 Uniform convergence of series of functions ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S1.html" title="7.1 Convergence tests for series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S3.html" title="7.3 Uniform convergence of series of functions ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S4.html" title="7.4 Differentiability of power series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S5.html" title="7.5 Properties of the exponential function ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S6.html" title="7.6 Analyticity versus smoothness ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="7.1" data-path="Ch7.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S1.html" title="7.1 Convergence tests for series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.1 </span></b>Convergence tests for series</a></li>
+<li data-level="7.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.2 </span></b>Power series and their radius of convergence</a></li>
+<li data-level="7.3" data-path="Ch7.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S3.html" title="7.3 Uniform convergence of series of functions ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.3 </span></b>Uniform convergence of series of functions</a></li>
+<li data-level="7.4" data-path="Ch7.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S4.html" title="7.4 Differentiability of power series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.4 </span></b>Differentiability of power series</a></li>
+<li data-level="7.5" data-path="Ch7.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S5.html" title="7.5 Properties of the exponential function ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.5 </span></b>Properties of the exponential function</a></li>
+<li data-level="7.6" data-path="Ch7.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S6.html" title="7.6 Analyticity versus smoothness ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.6 </span></b>Analyticity versus smoothness</a></li>
+</ol>
+</li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Power series and their radius of convergence</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">7.2</span> Power series and their radius of convergence</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">A </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">power series</span><span class="ltx_text" style="font-size:120%;"> is a series of the form</span></p>
+<div id="Ch7.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex12.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">where </span><math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is interpreted as a real </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">variable</span><span class="ltx_text" style="font-size:120%;">. The series depends on the
+choice of value for </span><math id="p1.m2" class="ltx_Math" alttext="x\in{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mi mathsize="120%">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. The
+terms of the series are </span><math id="p1.m3" class="ltx_Math" alttext="a_{n}x^{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow><annotation encoding="application/x-tex">a_{n}x^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and the </span><math id="p1.m4" class="ltx_Math" alttext="k^{th}" display="inline"><semantics><msup><mi mathsize="120%">k</mi><mrow><mi mathsize="120%">t</mi><mo>⁢</mo><mi mathsize="120%">h</mi></mrow></msup><annotation encoding="application/x-tex">k^{th}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> partial sum is the polynomial function</span></p>
+<div id="Ch7.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex13.m1" class="ltx_Math" alttext="f_{k}(x)=\sum_{n=0}^{k}a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{k}x^{k}," display="block"><semantics><mrow><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">k</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></munderover><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><mo mathsize="120%">=</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">+</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo>⁢</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">+</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup></mrow><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">+</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">k</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">k</mi></msup></mrow></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">f_{k}(x)=\sum_{n=0}^{k}a_{n}x^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{k}x^{k},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">just as for series in general.
+Note that, if </span><math id="p1.m5" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, then every partial sum is </span><math id="p1.m6" class="ltx_Math" alttext="f_{k}(0)=a_{0}" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">k</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub></mrow><annotation encoding="application/x-tex">f_{k}(0)=a_{0}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, so the series
+certainly converges (to </span><math id="p1.m7" class="ltx_Math" alttext="a_{0}" display="inline"><semantics><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><annotation encoding="application/x-tex">a_{0}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">) in that case. In general, a power series may
+converge for some values of </span><math id="p1.m8" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> but diverge for others.
+If the series converges for a particular
+choice of </span><math id="p1.m9" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, its limit will, in general, depend on </span><math id="p1.m10" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. So a power series
+defines a real-valued function on some subset (perhaps all of) </span><math id="p1.m11" class="ltx_Math" alttext="{\mathbb{R}}" display="inline"><semantics><mi mathsize="120%">ℝ</mi><annotation encoding="application/x-tex">{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. The following example is fundamental (and, hopefully, familiar).</span></p>
+</div>
+<div id="Thmthm9f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.9</span></span><span class="ltx_text ltx_font_bold"> </span>(Geometric series)</h6>
+<div id="Thmthm9f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Claim: The series</span></p>
+<div id="Ch7.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex14.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}x^{n}" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}x^{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">converges to </span><math id="Thmthm9f.p1.m1" class="ltx_Math" alttext="1/(1-x)" display="inline"><semantics><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/(1-x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> if </span><math id="Thmthm9f.p1.m2" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and diverges otherwise.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If </span><math id="p2.m1" class="ltx_Math" alttext="x=1" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">x=1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, the </span><math id="p2.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi mathsize="120%">k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">-th partial sum is </span><math id="p2.m3" class="ltx_Math" alttext="s_{k}=k+1" display="inline"><semantics><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></mrow><annotation encoding="application/x-tex">s_{k}=k+1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and this sequence clearly diverges. If </span><math id="p2.m4" class="ltx_Math" alttext="x\neq 1" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">≠</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">x\neq 1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> then</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx62" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch7.Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex15.m1" class="ltx_Math" alttext="\displaystyle s_{k}" display="inline"><semantics><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><annotation encoding="application/x-tex">\displaystyle s_{k}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex15.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex15.m3" class="ltx_Math" alttext="\displaystyle 1+x+x^{2}+\cdots x^{k}" display="inline"><semantics><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mi mathsize="120%">x</mi><mo mathsize="120%">+</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mrow><mi mathsize="120%" mathvariant="normal">⋯</mi><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">k</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 1+x+x^{2}+\cdots x^{k}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch7.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex16.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow\quad xs_{k}" display="inline"><semantics><mrow><mo mathsize="120%" stretchy="false">⇒</mo><mspace width="1.2em"></mspace><mrow><mi mathsize="120%">x</mi><mo>⁢</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\quad xs_{k}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex16.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex16.m3" class="ltx_Math" alttext="\displaystyle x+x^{2}+x^{3}+\cdots+x^{k+1}" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">+</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">3</mn></msup><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">+</mo><msup><mi mathsize="120%">x</mi><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle x+x^{2}+x^{3}+\cdots+x^{k+1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch7.Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex17.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow\quad(1-x)s_{k}" display="inline"><semantics><mrow><mo mathsize="120%" stretchy="false">⇒</mo><mspace width="1.2em"></mspace><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\quad(1-x)s_{k}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex17.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex17.m3" class="ltx_Math" alttext="\displaystyle 1-x^{k+1}" display="inline"><semantics><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><msup><mi mathsize="120%">x</mi><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle 1-x^{k+1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch7.Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex18.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow\quad s_{k}" display="inline"><semantics><mrow><mo mathsize="120%" stretchy="false">⇒</mo><mspace width="1.2em"></mspace><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\quad s_{k}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex18.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex18.m3" class="ltx_Math" alttext="\displaystyle\frac{1-x^{k+1}}{1-x}." display="inline"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><msup><mi mathsize="120%">x</mi><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow></mfrac></mstyle><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\frac{1-x^{k+1}}{1-x}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The sequence </span><math id="p2.m5" class="ltx_Math" alttext="x^{k}" display="inline"><semantics><msup><mi mathsize="120%">x</mi><mi mathsize="120%">k</mi></msup><annotation encoding="application/x-tex">x^{k}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges to </span><math id="p2.m6" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;"> if </span><math id="p2.m7" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and diverges if </span><math id="p2.m8" class="ltx_Math" alttext="x=-1" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Hence, </span><math id="p2.m9" class="ltx_Math" alttext="s_{k}\rightarrow 1/(1-x)" display="inline"><semantics><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo mathsize="120%" stretchy="false">→</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">s_{k}\rightarrow 1/(1-x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> if </span><math id="p2.m10" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and diverges otherwise.
+∎</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">So if we use the power series to define a function</span></p>
+<div id="Ch7.Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex19.m1" class="ltx_Math" alttext="f(x)=\sum_{n=0}^{\infty}x^{n}" display="block"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">f(x)=\sum_{n=0}^{\infty}x^{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">then </span><math id="p3.m1" class="ltx_Math" alttext="f:D\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">D</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:D\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> where </span><math id="p3.m2" class="ltx_Math" alttext="D=(-1,1)" display="inline"><semantics><mrow><mi mathsize="120%">D</mi><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">D=(-1,1)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and for all </span><math id="p3.m3" class="ltx_Math" alttext="x\in D" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mi mathsize="120%">D</mi></mrow><annotation encoding="application/x-tex">x\in D</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch7.Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex20.m1" class="ltx_Math" alttext="f(x)=\frac{1}{1-x}." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mfrac><mn mathsize="120%">1</mn><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow></mfrac></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{1-x}.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Thmthm10f" class="ltx_theorem ltx_theorem_defn">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definition 7.10</span></span></h6>
+<div id="Thmthm10f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">radius of convergence</span><span class="ltx_text" style="font-size:120%;"> of a power series
+</span><math id="Thmthm10f.p1.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is</span></p>
+<div id="Ch7.Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex21.m1" class="ltx_math_unparsed" alttext="R:=\sup\{|x|\&gt;:\&gt;\mbox{$\sum_{n=0}^{\infty}|a_{n}x^{n}|$ converges}\}." display="block"><semantics><mrow><mi mathsize="120%">R</mi><mo lspace="0.278em" mathsize="120%">:=</mo><mo lspace="0.111em" mathsize="120%" movablelimits="false" rspace="0em">sup</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mi mathsize="120%">x</mi><mo fence="false" maxsize="120%" minsize="120%" rspace="0.387em">|</mo><mo mathsize="120%" rspace="0.498em">:</mo><mrow><mrow><mstyle displaystyle="false"><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><mtext mathsize="120%"> converges</mtext></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">R:=\sup\{|x|\&gt;:\&gt;\mbox{$\sum_{n=0}^{\infty}|a_{n}x^{n}|$ converges}\}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If this set is unbounded above, we say that </span><math id="Thmthm10f.p1.m2" class="ltx_Math" alttext="R=\infty" display="inline"><semantics><mrow><mi mathsize="120%">R</mi><mo mathsize="120%">=</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">R=\infty</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The radius of convergence of a power series tells us almost everything about the subset of </span><math id="p4.m1" class="ltx_Math" alttext="{\mathbb{R}}" display="inline"><semantics><mi mathsize="120%">ℝ</mi><annotation encoding="application/x-tex">{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> on
+which it converges:</span></p>
+</div>
+<div id="Thmthm11f" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 7.11</span></span></h6>
+<div id="Thmthm11f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let a power series have radius of convergence <math id="Thmthm11f.p1.m1" class="ltx_Math" alttext="R&gt;0" display="inline"><semantics><mrow><mi>R</mi><mo mathvariant="normal">&gt;</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">R&gt;0</annotation></semantics></math>. Then the series
+</span><span class="ltx_text ltx_font_bold" style="font-size:120%;">converges absolutely</span><span class="ltx_text ltx_font_italic" style="font-size:120%;"> for <math id="Thmthm11f.p1.m2" class="ltx_Math" alttext="|x|&lt;R" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>x</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">&lt;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">|x|&lt;R</annotation></semantics></math> and </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">diverges</span><span class="ltx_text ltx_font_italic" style="font-size:120%;"> for <math id="Thmthm11f.p1.m3" class="ltx_Math" alttext="|x|&gt;R" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>x</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">&gt;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">|x|&gt;R</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">This Theorem follows quite quickly once we have proved the following Lemma:</span></p>
+</div>
+<div id="Thmthm12e" class="ltx_theorem ltx_theorem_lemma">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Lemma 7.12</span></span></h6>
+<div id="Thmthm12e.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm12e.p1.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="inline"><semantics><mrow><msubsup><mo mathvariant="normal">∑</mo><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>a</mi><mi>n</mi></msub><mo mathvariant="italic">⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math> converge at <math id="Thmthm12e.p1.m2" class="ltx_Math" alttext="x=x_{1}" display="inline"><semantics><mrow><mi>x</mi><mo mathvariant="normal">=</mo><msub><mi>x</mi><mn mathvariant="normal">1</mn></msub></mrow><annotation encoding="application/x-tex">x=x_{1}</annotation></semantics></math>. Then it converges
+<span class="ltx_text ltx_font_normal">absolutely</span> for all <math id="Thmthm12e.p1.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> such that <math id="Thmthm12e.p1.m4" class="ltx_Math" alttext="|x|&lt;|x_{1}|" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>x</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">&lt;</mo><mrow><mo mathvariant="normal" stretchy="false">|</mo><msub><mi>x</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal" stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">|x|&lt;|x_{1}|</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Since </span><math id="p6.m1" class="ltx_Math" alttext="\sum a_{n}x_{1}^{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mrow></mrow><annotation encoding="application/x-tex">\sum a_{n}x_{1}^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges, </span><math id="p6.m2" class="ltx_Math" alttext="a_{n}x_{1}^{n}\rightarrow 0" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mrow><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}x_{1}^{n}\rightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> by the Divergence Test, and so is bounded:
+there exists </span><math id="p6.m3" class="ltx_Math" alttext="K&gt;0" display="inline"><semantics><mrow><mi mathsize="120%">K</mi><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">K&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that for all </span><math id="p6.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+</span><math id="p6.m5" class="ltx_Math" alttext="|a_{n}x_{1}^{n}|&lt;K" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mi mathsize="120%">K</mi></mrow><annotation encoding="application/x-tex">|a_{n}x_{1}^{n}|&lt;K</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But then for all </span><math id="p6.m6" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch7.Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex22.m1" class="ltx_Math" alttext="|a_{n}x^{n}|=|a_{n}x_{1}^{n}|\frac{|x|^{n}}{|x_{1}|^{n}}&lt;K\left(\frac{|x|}{|x_%
+{1}|}\right)^{n}" display="block"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>⁢</mo><mfrac><msup><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mi mathsize="120%">n</mi></msup><msup><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow><mi mathsize="120%">n</mi></msup></mfrac></mrow><mo mathsize="120%">&lt;</mo><mrow><mi mathsize="120%">K</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow></mfrac><mo>)</mo></mrow><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">|a_{n}x^{n}|=|a_{n}x_{1}^{n}|\frac{|x|^{n}}{|x_{1}|^{n}}&lt;K\left(\frac{|x|}{|x_%
+{1}|}\right)^{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">so if </span><math id="p6.m7" class="ltx_Math" alttext="|x|&lt;|x_{1}|" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><annotation encoding="application/x-tex">|x|&lt;|x_{1}|</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p6.m8" class="ltx_Math" alttext="\sum_{n=0}^{\infty}|a_{n}x^{n}|" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><mo lspace="0em" maxsize="120%" minsize="120%">|</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}|a_{n}x^{n}|</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges by comparison with the
+convergent (geometric) series </span><math id="p6.m9" class="ltx_Math" alttext="\sum_{n=0}^{\infty}(|x|/|x_{1}|)^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><msup><mrow><mo lspace="0em" maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}(|x|/|x_{1}|)^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+∎</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Proof of Theorem <a href="#Thmthm11f" title="Theorem 7.11 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.11</span></a>:  </span><span class="ltx_text" style="font-size:120%;">
+Let </span><math id="p7.m1" class="ltx_math_unparsed" alttext="A:=\{|x|:\sum_{n=0}^{\infty}|a_{n}x^{n}|\mbox{ converges}\}\subset{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">A</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mi mathsize="120%">x</mi><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mo mathsize="120%" rspace="0.111em">:</mo><msubsup><mo maxsize="120%" minsize="120%" rspace="0em" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mtext mathsize="120%"> converges</mtext><mo maxsize="120%" minsize="120%">}</mo></mrow><mo mathsize="120%">⊂</mo><mi mathsize="120%">ℝ</mi></mrow><annotation encoding="application/x-tex">A:=\{|x|:\sum_{n=0}^{\infty}|a_{n}x^{n}|\mbox{ converges}\}\subset{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, so that
+</span><math id="p7.m2" class="ltx_Math" alttext="R=\sup A" display="inline"><semantics><mrow><mi mathsize="120%">R</mi><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" mathsize="120%" rspace="0.167em">sup</mo><mi mathsize="120%">A</mi></mrow></mrow><annotation encoding="application/x-tex">R=\sup A</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If </span><math id="p8.m1" class="ltx_Math" alttext="|x|&lt;R" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mi mathsize="120%">R</mi></mrow><annotation encoding="application/x-tex">|x|&lt;R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> then there exists </span><math id="p8.m2" class="ltx_Math" alttext="x_{1}" display="inline"><semantics><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><annotation encoding="application/x-tex">x_{1}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> with </span><math id="p8.m3" class="ltx_Math" alttext="|x|&lt;|x_{1}|&lt;R" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mi mathsize="120%">R</mi></mrow><annotation encoding="application/x-tex">|x|&lt;|x_{1}|&lt;R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> such that
+</span><math id="p8.m4" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x_{1}^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></msubsup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x_{1}^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+is absolutely convergent (else </span><math id="p8.m5" class="ltx_Math" alttext="R" display="inline"><semantics><mi mathsize="120%">R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> isn’t the </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">least</span><span class="ltx_text" style="font-size:120%;">
+upper bound on </span><math id="p8.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi mathsize="120%">A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p8.m7" class="ltx_Math" alttext="|x|" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><annotation encoding="application/x-tex">|x|</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> being smaller), hence convergent, so
+</span><math id="p8.m8" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is absolutely convergent by Lemma </span><a href="#Thmthm12e" title="Lemma 7.12 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.12</span></a><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If </span><math id="p9.m1" class="ltx_Math" alttext="|x|&gt;R" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&gt;</mo><mi mathsize="120%">R</mi></mrow><annotation encoding="application/x-tex">|x|&gt;R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p9.m2" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">converges</span><span class="ltx_text" style="font-size:120%;"> then
+</span><math id="p9.m3" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x_{2}^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msubsup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn><mi mathsize="120%">n</mi></msubsup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x_{2}^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, where
+</span><math id="p9.m4" class="ltx_Math" alttext="x_{2}=(|x|+R)/2" display="inline"><semantics><mrow><msub><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">=</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">+</mo><mi mathsize="120%">R</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mn mathsize="120%">2</mn></mrow></mrow><annotation encoding="application/x-tex">x_{2}=(|x|+R)/2</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, converges absolutely by Lemma </span><a href="#Thmthm12e" title="Lemma 7.12 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.12</span></a><span class="ltx_text" style="font-size:120%;">, since
+</span><math id="p9.m5" class="ltx_Math" alttext="|x_{2}|&lt;|x|" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><annotation encoding="application/x-tex">|x_{2}|&lt;|x|</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. But </span><math id="p9.m6" class="ltx_Math" alttext="|x_{2}|&gt;R" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msub><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&gt;</mo><mi mathsize="120%">R</mi></mrow><annotation encoding="application/x-tex">|x_{2}|&gt;R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, a contradiction (</span><math id="p9.m7" class="ltx_Math" alttext="R" display="inline"><semantics><mi mathsize="120%">R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> isn’t an upper bound on </span><math id="p9.m8" class="ltx_Math" alttext="A" display="inline"><semantics><mi mathsize="120%">A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+at all!), so we conclude that </span><math id="p9.m9" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}x^{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}x^{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">diverges</span><span class="ltx_text" style="font-size:120%;">.
+ </span><math id="p9.m10" class="ltx_Math" alttext="\Box" display="inline"><semantics><mi mathsize="120%" mathvariant="normal">□</mi><annotation encoding="application/x-tex">\Box</annotation></semantics></math></p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">So the series converges on </span><math id="p10.m1" class="ltx_Math" alttext="(-R,R)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">R</mi></mrow><mo mathsize="120%">,</mo><mi mathsize="120%">R</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(-R,R)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and diverges on </span><math id="p10.m2" class="ltx_Math" alttext="(-\infty,-R)\cup(R,\infty)" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow><mo mathsize="120%">,</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">R</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">∪</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">R</mi><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">(-\infty,-R)\cup(R,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. The only information not
+revealed by Theorem </span><a href="#Thmthm11f" title="Theorem 7.11 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.11</span></a><span class="ltx_text" style="font-size:120%;"> is whether the series converges at </span><math id="p10.m3" class="ltx_Math" alttext="x=\pm R" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">±</mo><mi mathsize="120%">R</mi></mrow></mrow><annotation encoding="application/x-tex">x=\pm R</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. So, it’s important to be able to compute radii of convergence. Luckily this can usually be achieved with a simple application of the Ratio Test.</span></p>
+</div>
+<div id="Thmthm13e" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.13</span></span></h6>
+<div id="Thmthm13e.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Claim:
+</span><math id="Thmthm13e.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=0}^{\infty}\frac{nx^{3n+1}}{n^{2}+1}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mrow><mrow><mn mathsize="120%">3</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=0}^{\infty}\frac{nx^{3n+1}}{n^{2}+1}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> has radius of convergence </span><math id="Thmthm13e.p1.m2" class="ltx_Math" alttext="R=1" display="inline"><semantics><mrow><mi mathsize="120%">R</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">R=1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p11" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let </span><math id="p11.m1" class="ltx_Math" alttext="b_{n}=|nx^{3n+1}/(n^{2}+1)|&gt;0" display="inline"><semantics><mrow><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mrow><mrow><mn mathsize="120%">3</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">b_{n}=|nx^{3n+1}/(n^{2}+1)|&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and note that</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx63" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch7.Ex26">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex23.m1" class="ltx_Math" alttext="\displaystyle\frac{b_{n+1}}{b_{n}}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><msub><mi mathsize="120%">b</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msub><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{b_{n+1}}{b_{n}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex23.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex23.m3" class="ltx_Math" alttext="\displaystyle\frac{|(n+1)x^{3n+4}|}{n^{2}+2n+3}\times\frac{n^{2}+1}{|nx^{3n+1}%
+|}\qquad\qquad\qquad\qquad" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mrow><mrow><mn mathsize="120%">3</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">4</mn></mrow></msup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">3</mn></mrow></mfrac></mstyle><mo lspace="0.222em" mathsize="120%" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mrow><mrow><mn mathsize="120%">3</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow></mfrac></mstyle></mrow><mspace width="9.6em"></mspace></mrow><annotation encoding="application/x-tex">\displaystyle\frac{|(n+1)x^{3n+4}|}{n^{2}+2n+3}\times\frac{n^{2}+1}{|nx^{3n+1}%
+|}\qquad\qquad\qquad\qquad</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex24.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex24.m2" class="ltx_Math" alttext="\displaystyle\frac{(n+1)(n^{2}+1)|x|^{3}}{(n^{2}+2n+3)n}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><msup><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mn mathsize="120%">3</mn></msup></mrow><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">3</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mi mathsize="120%">n</mi></mrow></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{(n+1)(n^{2}+1)|x|^{3}}{(n^{2}+2n+3)n}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex25.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex25.m2" class="ltx_Math" alttext="\displaystyle\frac{(1+1/n)(1+1/n^{2})}{1+2/n+3/n^{2}}|x|^{3}" display="inline"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">2</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mrow><mn mathsize="120%">3</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup></mrow></mrow></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mn mathsize="120%">3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle\frac{(1+1/n)(1+1/n^{2})}{1+2/n+3/n^{2}}|x|^{3}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex26.m1" class="ltx_Math" alttext="\displaystyle\rightarrow" display="inline"><semantics><mo mathsize="120%" stretchy="false">→</mo><annotation encoding="application/x-tex">\displaystyle\rightarrow</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex26.m2" class="ltx_Math" alttext="\displaystyle|x|^{3}." display="inline"><semantics><mrow><msup><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mn mathsize="120%">3</mn></msup><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle|x|^{3}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Hence, by the Ratio Test, the power series converges absolutely if </span><math id="p11.m2" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, but not if </span><math id="p11.m3" class="ltx_Math" alttext="|x|&gt;1" display="inline"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">|</mo></mrow><mo mathsize="120%">&gt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">|x|&gt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Comparing with Definition </span><a href="#Thmthm10f" title="Definition 7.10 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.10</span></a><span class="ltx_text" style="font-size:120%;">, we see that </span><math id="p11.m4" class="ltx_Math" alttext="R=1" display="inline"><semantics><mrow><mi mathsize="120%">R</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">R=1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+∎</span></p>
+</div>
+</div>
+<div id="p12" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">It follows that this series converges absolutely on </span><math id="p12.m1" class="ltx_Math" alttext="(-1,1)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(-1,1)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and diverges on </span><math id="p12.m2" class="ltx_Math" alttext="{\mathbb{R}}{\backslash}[-1,1]" display="inline"><semantics><mrow><mi mathsize="120%">ℝ</mi><mo lspace="0.222em" mathsize="120%" rspace="0.222em">\</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">{\mathbb{R}}{\backslash}[-1,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (Theorem </span><a href="#Thmthm11f" title="Theorem 7.11 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.11</span></a><span class="ltx_text" style="font-size:120%;">).</span></p>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:120%;">Question</span><span class="ltx_text" style="font-size:120%;"> What precisely is the set of values of </span><math id="p13.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> in </span><math id="p13.m2" class="ltx_Math" alttext="{\mathbb{R}}" display="inline"><semantics><mi mathsize="120%">ℝ</mi><annotation encoding="application/x-tex">{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for which the power series in Example
+</span><a href="#Thmthm13e" title="Example 7.13 ‣ 7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">7.13</span></a><span class="ltx_text" style="font-size:120%;"> converges? If you get stuck, watch this
+</span><a href="https://web.microsoftstream.com/video/dbbad54e-64af-494c-8c2d-b47acd32470c" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;"></span></p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Many functions are most conveniently </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">defined</span><span class="ltx_text" style="font-size:120%;"> by power series:</span></p>
+</div>
+<div id="Thmthm14e" class="ltx_theorem ltx_theorem_defn">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definition 7.14</span></span></h6>
+<div id="Thmthm14e.p1" class="ltx_para">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx64" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch7.Ex27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex27.m1" class="ltx_Math" alttext="\displaystyle\exp:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\exp(x)" display="inline"><semantics><mrow><mi mathsize="120%">exp</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" stretchy="false">→</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mi mathsize="120%">exp</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exp:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\exp(x)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex27.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex27.m3" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}\frac{x^{n}}{n!}," display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">!</mo></mrow></mfrac></mstyle></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n=0}^{\infty}\frac{x^{n}}{n!},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch7.Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex28.m1" class="ltx_Math" alttext="\displaystyle\sin:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\sin(x)" display="inline"><semantics><mrow><mi mathsize="120%">sin</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" stretchy="false">→</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mi mathsize="120%">sin</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sin:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\sin(x)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex28.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex28.m3" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{2n+1}}{(2n+1)!}," display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi mathsize="120%">x</mi><mrow><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">!</mo></mrow></mfrac></mstyle></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{2n+1}}{(2n+1)!},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch7.Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch7.Ex29.m1" class="ltx_Math" alttext="\displaystyle\cos:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\cos(x)" display="inline"><semantics><mrow><mi mathsize="120%">cos</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" stretchy="false">→</mo><mrow><mi mathsize="120%">ℝ</mi><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mi mathsize="120%">cos</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\cos:{\mathbb{R}}\rightarrow{\mathbb{R}},\qquad\cos(x)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch7.Ex29.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch7.Ex29.m3" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{2n}}{(2n)!}." display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">n</mi></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi mathsize="120%">x</mi><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow></msup><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">!</mo></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n=0}^{\infty}(-1)^{n}\frac{x^{2n}}{(2n)!}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Thmthm15e" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercise 7.15</span></span></h6>
+<div id="Thmthm15e.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Show that these functions are well defined (in fact, the series defining them converge absolutely) for all </span><math id="Thmthm15e.p1.m1" class="ltx_Math" alttext="x\in{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mi mathsize="120%">ℝ</mi></mrow><annotation encoding="application/x-tex">x\in{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. If you get stuck, you can watch me do </span><math id="Thmthm15e.p1.m2" class="ltx_Math" alttext="\sin" display="inline"><semantics><mi mathsize="120%">sin</mi><annotation encoding="application/x-tex">\sin</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> in this
+</span><a href="https://web.microsoftstream.com/video/deb8540a-fb97-47cc-b18e-23fce021706b" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;"></span></p>
+</div>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">So we can use power series to define functions like </span><math id="p15.m1" class="ltx_Math" alttext="\exp" display="inline"><semantics><mi mathsize="120%">exp</mi><annotation encoding="application/x-tex">\exp</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p15.m2" class="ltx_Math" alttext="\sin" display="inline"><semantics><mi mathsize="120%">sin</mi><annotation encoding="application/x-tex">\sin</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and </span><math id="p15.m3" class="ltx_Math" alttext="\cos" display="inline"><semantics><mi mathsize="120%">cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+But what do we know about such functions? Are they continuous? Differentiable? Smooth? To answer these questions we’ll need to apply the theory of uniform convergence developed in the previous chapter.</span></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch7.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch7.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.1 Swapping limits ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch6.S2.html" title="6.2 Pointwise convergence versus uniform convergence ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch6.S2.html" title="6.2 Pointwise convergence versus uniform convergence ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch6.S3.html" title="6.3 Uniform convergence and calculus ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch6.S4.html" title="6.4 Completeness of the set of bounded functions ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="6.1 Swapping limits ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Swapping limits</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="6.2 Pointwise convergence versus uniform convergence ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Pointwise convergence versus uniform convergence</a></li>
+<li data-level="6.3" data-path="Ch6.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S3.html" title="6.3 Uniform convergence and calculus ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>Uniform convergence and calculus</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="6.4 Completeness of the set of bounded functions ‣ Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Completeness of the set of bounded functions</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Swapping limits</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">6.1</span> Swapping limits</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">There are many occasions in calculus where we must compute a </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">double</span><span class="ltx_text" style="font-size:120%;"> limit. For example, say we wish to
+compute the derivative of the function </span><math id="p1.m1" class="ltx_Math" alttext="f=\exp" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo mathsize="120%">=</mo><mi mathsize="120%">exp</mi></mrow><annotation encoding="application/x-tex">f=\exp</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. We know that </span><math id="p1.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is the limit of a convergent series, that is,</span></p>
+<div id="Ch6.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex1.m1" class="ltx_Math" alttext="f(x)=\lim_{k\rightarrow\infty}\sum_{n=0}^{k}\frac{x^{n}}{n!}." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0em">lim</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></munderover><mfrac><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">!</mo></mrow></mfrac></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">f(x)=\lim_{k\rightarrow\infty}\sum_{n=0}^{k}\frac{x^{n}}{n!}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Its derivative at </span><math id="p1.m3" class="ltx_Math" alttext="a\in{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">a</mi><mo mathsize="120%">∈</mo><mi mathsize="120%">ℝ</mi></mrow><annotation encoding="application/x-tex">a\in{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, therefore, is</span></p>
+<div id="Ch6.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex2.m1" class="ltx_Math" alttext="f^{\prime}(a)=\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}=\lim_{x\rightarrow a}%
+\lim_{k\rightarrow\infty}\frac{1}{x-a}\sum_{n=0}^{k}\frac{x^{n}-a^{n}}{n!}," display="block"><semantics><mrow><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">a</mi></mrow></munder><mfrac><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow></mfrac></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0.0835em">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">a</mi></mrow></munder><mrow><munder><mo lspace="0.0835em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><mfrac><mn mathsize="120%">1</mn><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></munderover><mfrac><mrow><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup><mo mathsize="120%">−</mo><msup><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msup></mrow><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">!</mo></mrow></mfrac></mrow></mrow></mrow></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(a)=\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}=\lim_{x\rightarrow a}%
+\lim_{k\rightarrow\infty}\frac{1}{x-a}\sum_{n=0}^{k}\frac{x^{n}-a^{n}}{n!},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">assuming this exists. Wouldn’t it be nice if we could swap the order of these limits? Since</span></p>
+<div id="Ch6.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex3.m1" class="ltx_Math" alttext="\lim_{x\rightarrow a}\frac{x^{n}-a^{n}}{x-a}=na^{n-1}" display="block"><semantics><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">a</mi></mrow></munder><mfrac><mrow><msup><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msup><mo mathsize="120%">−</mo><msup><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msup></mrow><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow></mfrac></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><msup><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">\lim_{x\rightarrow a}\frac{x^{n}-a^{n}}{x-a}=na^{n-1}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">we would then deduce that</span></p>
+<div id="Ch6.Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex4.m1" class="ltx_Math" alttext="f^{\prime}(a)=\lim_{k\rightarrow\infty}\sum_{n=0}^{k}\frac{1}{n!}na^{n-1}=\lim%
+_{k\rightarrow\infty}\sum_{m=0}^{k-1}\frac{a^{m}}{m!}=f(a)," display="block"><semantics><mrow><mrow><mrow><msup><mi mathsize="120%">f</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0em">lim</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></munderover><mrow><mfrac><mn mathsize="120%">1</mn><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">!</mo></mrow></mfrac><mo>⁢</mo><mi mathsize="120%">n</mi><mo>⁢</mo><msup><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msup></mrow></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0em">lim</mo><mrow><mi mathsize="120%">k</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">m</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></munderover><mfrac><msup><mi mathsize="120%">a</mi><mi mathsize="120%">m</mi></msup><mrow><mi mathsize="120%">m</mi><mo mathsize="120%">!</mo></mrow></mfrac></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(a)=\lim_{k\rightarrow\infty}\sum_{n=0}^{k}\frac{1}{n!}na^{n-1}=\lim%
+_{k\rightarrow\infty}\sum_{m=0}^{k-1}\frac{a^{m}}{m!}=f(a),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">establishing a fundamental property of the exponential function (it’s differentiable, and equals its own derivative).</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Sadly, this argument is fatally flawed because, in general, limits do </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">not</span><span class="ltx_text" style="font-size:120%;"> commute.</span></p>
+</div>
+<div id="Thmthm1f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 6.1</span></span></h6>
+<div id="Thmthm1f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Consider the function</span></p>
+<div id="Ch6.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex5.m1" class="ltx_Math" alttext="f:{\mathbb{R}}^{2}{\backslash}\{(0,0)\}\rightarrow{\mathbb{R}},\qquad f(x,y)=%
+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}." display="block"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mrow><msup><mi mathsize="120%">ℝ</mi><mn mathsize="120%">2</mn></msup><mo lspace="0.222em" mathsize="120%" rspace="0.222em">\</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mfrac><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">−</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow></mfrac></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">f:{\mathbb{R}}^{2}{\backslash}\{(0,0)\}\rightarrow{\mathbb{R}},\qquad f(x,y)=%
+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Its domain is the whole two-dimensional plane </span><math id="Thmthm1f.p1.m1" class="ltx_Math" alttext="{\mathbb{R}}^{2}" display="inline"><semantics><msup><mi mathsize="120%">ℝ</mi><mn mathsize="120%">2</mn></msup><annotation encoding="application/x-tex">{\mathbb{R}}^{2}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> except for the single point </span><math id="Thmthm1f.p1.m2" class="ltx_Math" alttext="(0,0)" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(0,0)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. For any fixed </span><math id="Thmthm1f.p1.m3" class="ltx_Math" alttext="x\in{\mathbb{R}}{\backslash}\{0\}" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mi mathsize="120%">ℝ</mi><mo lspace="0.222em" mathsize="120%" rspace="0.222em">\</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x\in{\mathbb{R}}{\backslash}\{0\}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, we can compute</span></p>
+<div id="Ch6.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex6.m1" class="ltx_Math" alttext="\lim_{y\rightarrow 0}f(x,y)=\lim_{y\rightarrow 0}\frac{x^{2}-y^{2}}{x^{2}+y^{2%
+}}=\frac{x^{2}}{x^{2}}=1." display="block"><semantics><mrow><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">y</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">y</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mfrac><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">−</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow></mfrac></mrow><mo mathsize="120%">=</mo><mfrac><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup></mfrac><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\lim_{y\rightarrow 0}f(x,y)=\lim_{y\rightarrow 0}\frac{x^{2}-y^{2}}{x^{2}+y^{2%
+}}=\frac{x^{2}}{x^{2}}=1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Hence</span></p>
+<div id="Ch6.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex7.m1" class="ltx_Math" alttext="\lim_{x\rightarrow 0}\left(\lim_{y\rightarrow 0}f(x,y)\right)=\lim_{x%
+\rightarrow 0}1=1." display="block"><semantics><mrow><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mo lspace="0em">(</mo><mrow><munder><mo lspace="0em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">y</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\rightarrow 0}\left(\lim_{y\rightarrow 0}f(x,y)\right)=\lim_{x%
+\rightarrow 0}1=1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">What if we swap the order of the two limits? For any fixed </span><math id="Thmthm1f.p1.m4" class="ltx_Math" alttext="y\in{\mathbb{R}}{\backslash}\{0\}" display="inline"><semantics><mrow><mi mathsize="120%">y</mi><mo mathsize="120%">∈</mo><mrow><mi mathsize="120%">ℝ</mi><mo lspace="0.222em" mathsize="120%" rspace="0.222em">\</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y\in{\mathbb{R}}{\backslash}\{0\}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch6.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex8.m1" class="ltx_Math" alttext="\lim_{x\rightarrow 0}f(x,y)=\lim_{x\rightarrow 0}\frac{x^{2}-y^{2}}{x^{2}+y^{2%
+}}=\frac{-y^{2}}{y^{2}}=-1." display="block"><semantics><mrow><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mfrac><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">−</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow></mfrac></mrow><mo mathsize="120%">=</mo><mfrac><mrow><mo mathsize="120%">−</mo><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mrow><msup><mi mathsize="120%">y</mi><mn mathsize="120%">2</mn></msup></mfrac><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\lim_{x\rightarrow 0}f(x,y)=\lim_{x\rightarrow 0}\frac{x^{2}-y^{2}}{x^{2}+y^{2%
+}}=\frac{-y^{2}}{y^{2}}=-1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Hence</span></p>
+<div id="Ch6.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex9.m1" class="ltx_Math" alttext="\lim_{y\rightarrow 0}\left(\lim_{x\rightarrow 0}f(x,y)\right)=\lim_{y%
+\rightarrow 0}-1=-1." display="block"><semantics><mrow><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">y</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mo lspace="0em">(</mo><mrow><munder><mo lspace="0em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">x</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo mathsize="120%">,</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0em">lim</mo><mrow><mi mathsize="120%">y</mi><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow></munder><mo lspace="0em" mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\lim_{y\rightarrow 0}\left(\lim_{x\rightarrow 0}f(x,y)\right)=\lim_{y%
+\rightarrow 0}-1=-1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Clearly, the order in which we evaluate the limits matters! </span><math id="Thmthm1f.p1.m5" class="ltx_Math" alttext="\Box" display="inline"><semantics><mi mathsize="144%" mathvariant="normal">□</mi><annotation encoding="application/x-tex">\Box</annotation></semantics></math><span class="ltx_text" style="font-size:144%;"> 
+<br class="ltx_break"></span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Here’s another example to illustrate this, where one of the “limits” is disguised in the form of a Riemann integral.</span></p>
+</div>
+<div id="Thmthm2e" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 6.2</span></span></h6>
+<div id="Thmthm2e.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">For each </span><math id="Thmthm2e.p1.m1" class="ltx_Math" alttext="n\in{\mathbb{Z}}^{+}" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">∈</mo><msup><mi mathsize="120%">ℤ</mi><mo mathsize="120%">+</mo></msup></mrow><annotation encoding="application/x-tex">n\in{\mathbb{Z}}^{+}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, let </span><math id="Thmthm2e.p1.m2" class="ltx_Math" alttext="f_{n}:[0,1]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:[0,1]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> be the function</span></p>
+<div id="Ch6.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex10.m1" class="ltx_Math" alttext="f_{n}(x)=\left\{\begin{array}[]{cc}{2n^{2}x,}&amp;0\leq x\leq\frac{1}{2n},\\
+\\
+{2n-2n^{2}x,}&amp;\frac{1}{2n}\leq x\leq\frac{1}{n},\\
+\\
+{0,}&amp;\frac{1}{n}\leq x\leq 1\end{array}\right." display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo>⁢</mo><mi mathsize="120%">x</mi></mrow><mo mathsize="120%">,</mo></mrow></mtd><mtd><mrow><mrow><mn mathsize="120%">0</mn><mo mathsize="120%">≤</mo><mi mathsize="120%">x</mi><mo mathsize="120%">≤</mo><mstyle displaystyle="false"><mfrac><mn mathsize="120%">1</mn><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow></mfrac></mstyle></mrow><mo mathsize="120%">,</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd></mtd></mtr><mtr><mtd><mrow><mrow><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">−</mo><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo>⁢</mo><mi mathsize="120%">x</mi></mrow></mrow><mo mathsize="120%">,</mo></mrow></mtd><mtd><mrow><mrow><mstyle displaystyle="false"><mfrac><mn mathsize="120%">1</mn><mrow><mn mathsize="120%">2</mn><mo>⁢</mo><mi mathsize="120%">n</mi></mrow></mfrac></mstyle><mo mathsize="120%">≤</mo><mi mathsize="120%">x</mi><mo mathsize="120%">≤</mo><mstyle displaystyle="false"><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></mfrac></mstyle></mrow><mo mathsize="120%">,</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd></mtd></mtr><mtr><mtd><mrow><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo></mrow></mtd><mtd><mrow><mstyle displaystyle="false"><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></mfrac></mstyle><mo mathsize="120%">≤</mo><mi mathsize="120%">x</mi><mo mathsize="120%">≤</mo><mn mathsize="120%">1</mn></mrow></mtd></mtr></mtable><mi></mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}(x)=\left\{\begin{array}[]{cc}{2n^{2}x,}&amp;0\leq x\leq\frac{1}{2n},\\
+\\
+{2n-2n^{2}x,}&amp;\frac{1}{2n}\leq x\leq\frac{1}{n},\\
+\\
+{0,}&amp;\frac{1}{n}\leq x\leq 1\end{array}\right.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">whose graph is depicted below:</span></p>
+</div>
+<div id="Thmthm2e.p2" class="ltx_para ltx_align_center">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="pictures/duli.png" id="Thmthm2e.p2.g1" class="ltx_graphics ltx_img_square" width="191" height="162" alt="[Uncaptioned image]"></div>
+</div>
+<div id="Thmthm2e.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Choose and fix any </span><math id="Thmthm2e.p3.m1" class="ltx_Math" alttext="x\in(0,1]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(0,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Then, for all </span><math id="Thmthm2e.p3.m2" class="ltx_Math" alttext="n&gt;1/x" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">&gt;</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">x</mi></mrow></mrow><annotation encoding="application/x-tex">n&gt;1/x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="Thmthm2e.p3.m3" class="ltx_Math" alttext="x&gt;1/n" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">&gt;</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow></mrow><annotation encoding="application/x-tex">x&gt;1/n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so </span><math id="Thmthm2e.p3.m4" class="ltx_Math" alttext="f_{n}(x)=0" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f_{n}(x)=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Hence, for each fixed </span><math id="Thmthm2e.p3.m5" class="ltx_Math" alttext="x\in(0,1]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in(0,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, the real sequence </span><math id="Thmthm2e.p3.m6" class="ltx_Math" alttext="f_{n}(x)" display="inline"><semantics><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is eventually </span><math id="Thmthm2e.p3.m7" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">. Hence </span><math id="Thmthm2e.p3.m8" class="ltx_Math" alttext="f_{n}(x)\rightarrow 0" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f_{n}(x)\rightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Furthermore </span><math id="Thmthm2e.p3.m9" class="ltx_Math" alttext="f_{n}(0)=0" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f_{n}(0)=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for all </span><math id="Thmthm2e.p3.m10" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, so this sequence also converges to </span><math id="Thmthm2e.p3.m11" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">. So, if we define </span><math id="Thmthm2e.p3.m12" class="ltx_Math" alttext="g:[0,1]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">g</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[0,1]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> to be the constant function
+</span><math id="Thmthm2e.p3.m13" class="ltx_Math" alttext="g(x)=0" display="inline"><semantics><mrow><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">g(x)=0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, then for all </span><math id="Thmthm2e.p3.m14" class="ltx_Math" alttext="x\in[0,1]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="Thmthm2e.p3.m15" class="ltx_Math" alttext="\lim_{n\rightarrow\infty}f_{n}(x)=g(x)" display="inline"><semantics><mrow><mrow><msub><mo mathsize="120%">lim</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></msub><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{n\rightarrow\infty}f_{n}(x)=g(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="Thmthm2e.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Consider now the real sequence</span></p>
+<div id="Ch6.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex11.m1" class="ltx_Math" alttext="a_{n}=\int_{0}^{1}f_{n}." display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mn mathsize="120%">1</mn></msubsup><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">a_{n}=\int_{0}^{1}f_{n}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Does this sequence converge, and if so, what is its limit? We might be tempted to argue that</span></p>
+<div id="Ch6.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex12.m1" class="ltx_Math" alttext="\lim_{n\rightarrow\infty}a_{n}=\lim_{n\rightarrow\infty}\int_{0}^{1}f_{n}(x)dx%
+=\int_{0}^{1}\lim_{n\rightarrow\infty}f_{n}(x)dx=\int_{0}^{1}g(x)dx=0," display="block"><semantics><mrow><mrow><mrow><munder><mo mathsize="120%" movablelimits="false">lim</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><mo mathsize="120%" rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" mathsize="120%" movablelimits="false" rspace="0em">lim</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mn mathsize="120%">1</mn></msubsup><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mn mathsize="120%">1</mn></msubsup><mrow><munder><mo lspace="0em" mathsize="120%" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mi mathsize="120%">d</mi><mo>⁢</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mn mathsize="120%">1</mn></msubsup><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\lim_{n\rightarrow\infty}a_{n}=\lim_{n\rightarrow\infty}\int_{0}^{1}f_{n}(x)dx%
+=\int_{0}^{1}\lim_{n\rightarrow\infty}f_{n}(x)dx=\int_{0}^{1}g(x)dx=0,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">swapping the order of the limit as </span><math id="Thmthm2e.p4.m1" class="ltx_Math" alttext="n\rightarrow\infty" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%" mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\rightarrow\infty</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and the “limit” defining the integral. But this is
+complete nonsense, since as we see immediately from the graph of </span><math id="Thmthm2e.p4.m2" class="ltx_Math" alttext="f_{n}" display="inline"><semantics><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><annotation encoding="application/x-tex">f_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch6.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex13.m1" class="ltx_Math" alttext="a_{n}=\frac{1}{2}\times\frac{1}{n}\times n=\frac{1}{2}," display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mfrac><mn mathsize="120%">1</mn><mn mathsize="120%">2</mn></mfrac><mo lspace="0.222em" mathsize="120%" rspace="0.222em">×</mo><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></mfrac><mo lspace="0.222em" mathsize="120%" rspace="0.222em">×</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%">=</mo><mfrac><mn mathsize="120%">1</mn><mn mathsize="120%">2</mn></mfrac></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">a_{n}=\frac{1}{2}\times\frac{1}{n}\times n=\frac{1}{2},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and the limit of this (constant) sequence is </span><math id="Thmthm2e.p4.m3" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn mathsize="120%">1</mn><mn mathsize="120%">2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">! </span><math id="Thmthm2e.p4.m4" class="ltx_Math" alttext="\Box" display="inline"><semantics><mi mathsize="144%" mathvariant="normal">□</mi><annotation encoding="application/x-tex">\Box</annotation></semantics></math><span class="ltx_text" style="font-size:144%;"> 
+<br class="ltx_break"></span></p>
+</div>
+</div>
+<div id="Thmthm3e" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 6.3</span></span></h6>
+<div id="Thmthm3e.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Here’s another example with similar behaviour. For each </span><math id="Thmthm3e.p1.m1" class="ltx_Math" alttext="n\in{\mathbb{Z}}^{+}" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">∈</mo><msup><mi mathsize="120%">ℤ</mi><mo mathsize="120%">+</mo></msup></mrow><annotation encoding="application/x-tex">n\in{\mathbb{Z}}^{+}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> define</span></p>
+<div id="Ch6.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex14.m1" class="ltx_Math" alttext="f_{n}:[0,1]\rightarrow{\mathbb{R}},\qquad f_{n}(x)=n^{2}xe^{-n^{2}x^{2}/2}." display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow><mo mathsize="120%" rspace="2.567em">,</mo><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo>⁢</mo><mi mathsize="120%">x</mi><mo>⁢</mo><msup><mi mathsize="120%">e</mi><mrow><mo mathsize="120%">−</mo><mrow><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo>⁢</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup></mrow><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mn mathsize="120%">2</mn></mrow></mrow></msup></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">f_{n}:[0,1]\rightarrow{\mathbb{R}},\qquad f_{n}(x)=n^{2}xe^{-n^{2}x^{2}/2}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">I claim that, for each fixed </span><math id="Thmthm3e.p1.m2" class="ltx_Math" alttext="x\in[0,1]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="Thmthm3e.p1.m3" class="ltx_Math" alttext="f_{n}(x)\rightarrow 0" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f_{n}(x)\rightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Nonetheless</span></p>
+<div id="Ch6.Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch6.Ex15.m1" class="ltx_Math" alttext="\int_{0}^{1}f_{n}\rightarrow 1." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mn mathsize="120%">1</mn></msubsup><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub></mrow><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">1</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1}f_{n}\rightarrow 1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Try to convince yourself of these two facts (e.g. plotting the graphs of </span><math id="Thmthm3e.p1.m4" class="ltx_Math" alttext="f_{n}" display="inline"><semantics><msub><mi mathsize="120%">f</mi><mi mathsize="120%">n</mi></msub><annotation encoding="application/x-tex">f_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for </span><math id="Thmthm3e.p1.m5" class="ltx_Math" alttext="n=1,2,3,\ldots,10" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mn mathsize="120%">2</mn><mo mathsize="120%">,</mo><mn mathsize="120%">3</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><mn mathsize="120%">10</mn></mrow></mrow><annotation encoding="application/x-tex">n=1,2,3,\ldots,10</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> may help for the first part), then watch this
+</span><a href="https://web.microsoftstream.com/video/beb8753d-ecc1-4cc1-89d9-98021f9e8d3d" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">To handle limit swapping problems like this, we will need to develop the idea of </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">uniform</span><span class="ltx_text" style="font-size:120%;"> convergence.</span></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.2 Dissections and Riemann sums ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis‣ Chapter 4 Integration ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch4.S1.html" title="4.1 Suprema and infima ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch4.S3.html" title="4.3 Definition of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch4.S1.html" title="4.1 Suprema and infima ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch4.S3.html" title="4.3 Definition of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch4.S4.html" title="4.4 A sequential characterization of integrability ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch4.S5.html" title="4.5 Elementary properties of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="4.1 Suprema and infima ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Suprema and infima</a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="4.2 Dissections and Riemann sums ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Dissections and Riemann sums</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="4.3 Definition of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Definition of the Riemann integral</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="4.4 A sequential characterization of integrability ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>A sequential characterization of integrability</a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="4.5 Elementary properties of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Elementary properties of the Riemann integral</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Dissections and Riemann sums</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">4.2</span> Dissections and Riemann sums</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">How do we define the area of a bounded subset of the plane </span><math id="p1.m1" class="ltx_Math" alttext="{\mathbb{R}}^{2}" display="inline"><semantics><msup><mi mathsize="120%">ℝ</mi><mn mathsize="120%">2</mn></msup><annotation encoding="application/x-tex">{\mathbb{R}}^{2}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">? If the subset
+is a rectangle, the answer is easy: its area is its length times its width.
+Similarly, if the subset is a union of non-overlapping
+rectangles it’s easy: we just add up the areas of all the constituent
+rectangles.
+But what if the subset is more complicated: the region bounded by the
+</span><math id="p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">-axis, the vertical lines </span><math id="p1.m3" class="ltx_Math" alttext="x=a" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p1.m4" class="ltx_Math" alttext="x=b&gt;a" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">b</mi><mo mathsize="120%">&gt;</mo><mi mathsize="120%">a</mi></mrow><annotation encoding="application/x-tex">x=b&gt;a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and the graph </span><math id="p1.m5" class="ltx_Math" alttext="y=f(x)" display="inline"><semantics><mrow><mi mathsize="120%">y</mi><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y=f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> of some
+non-constant function, for example? One approach is to define
+the area of such a region to be the unique real number (if it
+exists) which is no bigger than the total area of any collection of rectangles
+which covers the region, and no smaller than the total area of any
+collection of rectangles which is covered by the region.
+This is the
+underlying idea that leads to the </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">Riemann integral</span><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">We begin
+by identifying the collections of rectangles we will use. These are determined
+by </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">dissecting</span><span class="ltx_text" style="font-size:120%;"> the interval </span><math id="p2.m1" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> into a finite collection of
+subintervals.</span></p>
+</div>
+<div id="Thmthm5c" class="ltx_theorem ltx_theorem_defn">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definition 4.5</span></span></h6>
+<div id="Thmthm5c.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">A </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">dissection</span><span class="ltx_text" style="font-size:120%;"> of a closed bounded interval </span><math id="Thmthm5c.p1.m1" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is
+a finite subset </span><math id="Thmthm5c.p1.m2" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> of </span><math id="Thmthm5c.p1.m3" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> containing both </span><math id="Thmthm5c.p1.m4" class="ltx_Math" alttext="a" display="inline"><semantics><mi mathsize="120%">a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="Thmthm5c.p1.m5" class="ltx_Math" alttext="b" display="inline"><semantics><mi mathsize="120%">b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. By convention,
+if </span><math id="Thmthm5c.p1.m6" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> has </span><math id="Thmthm5c.p1.m7" class="ltx_Math" alttext="n+1" display="inline"><semantics><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> elements, we label these </span><math id="Thmthm5c.p1.m8" class="ltx_Math" alttext="a_{0},a_{1},\ldots,a_{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">a_{0},a_{1},\ldots,a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, so that</span></p>
+<div id="Ch4.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex3.m1" class="ltx_Math" alttext="a=a_{0}&lt;a_{1}&lt;a_{2}&lt;\cdots&lt;a_{n}=b," display="block"><semantics><mrow><mrow><mi mathsize="120%">a</mi><mo mathsize="120%">=</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">&lt;</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">&lt;</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">&lt;</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">&lt;</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mi mathsize="120%">b</mi></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">a=a_{0}&lt;a_{1}&lt;a_{2}&lt;\cdots&lt;a_{n}=b,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and say that </span><math id="Thmthm5c.p1.m9" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is a dissection of </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">size</span><span class="ltx_text" style="font-size:120%;"> </span><math id="Thmthm5c.p1.m10" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. We say that
+</span><math id="Thmthm5c.p1.m11" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is a </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">regular</span><span class="ltx_text" style="font-size:120%;"> dissection if </span><math id="Thmthm5c.p1.m12" class="ltx_Math" alttext="a_{j}-a_{j-1}=(b-a)/n" display="inline"><semantics><mrow><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">b</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow></mrow><annotation encoding="application/x-tex">a_{j}-a_{j-1}=(b-a)/n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for all </span><math id="Thmthm5c.p1.m13" class="ltx_Math" alttext="j" display="inline"><semantics><mi mathsize="120%">j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, that
+is, if the points in the dissection are regularly spaced.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:120%;">Remark</span><span class="ltx_text" style="font-size:120%;"> The size of a dissection is one </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">less</span><span class="ltx_text" style="font-size:120%;"> than the number of elements it contains. This is the number of
+</span><span class="ltx_text ltx_font_italic" style="font-size:120%;">subintervals</span><span class="ltx_text" style="font-size:120%;"> </span><math id="p3.m1" class="ltx_Math" alttext="[a_{j-1},a_{j}]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a_{j-1},a_{j}]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> into which the dissection divides the interval </span><math id="p3.m2" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+<div id="Thmthm6c" class="ltx_theorem ltx_theorem_defn">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definition 4.6</span></span></h6>
+<div id="Thmthm6c.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let </span><math id="Thmthm6c.p1.m1" class="ltx_Math" alttext="f:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> be a bounded function and </span><math id="Thmthm6c.p1.m2" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> be a dissection
+of size </span><math id="Thmthm6c.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> of </span><math id="Thmthm6c.p1.m4" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. For each </span><math id="Thmthm6c.p1.m5" class="ltx_Math" alttext="j\in\{1,2,\ldots,n\}" display="inline"><semantics><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mn mathsize="120%">2</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><mi mathsize="120%">n</mi><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">j\in\{1,2,\ldots,n\}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, let</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx29" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch4.Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch4.Ex4.m1" class="ltx_Math" alttext="\displaystyle m_{j}" display="inline"><semantics><msub><mi mathsize="120%">m</mi><mi mathsize="120%">j</mi></msub><annotation encoding="application/x-tex">\displaystyle m_{j}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex4.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex4.m3" class="ltx_Math" alttext="\displaystyle\inf\{f(x)\&gt;:\&gt;a_{j-1}\leq x\leq a_{j}\}," display="inline"><semantics><mrow><mrow><mo mathsize="120%" movablelimits="false" rspace="0em">inf</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%" rspace="0.498em">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.498em">:</mo><mrow><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">≤</mo><mi mathsize="120%">x</mi><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\inf\{f(x)\&gt;:\&gt;a_{j-1}\leq x\leq a_{j}\},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ch4.Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch4.Ex5.m1" class="ltx_Math" alttext="\displaystyle\mbox{and}\quad M_{j}" display="inline"><semantics><mrow><mtext mathsize="120%">and</mtext><mspace width="1.2em"></mspace><msub><mi mathsize="120%">M</mi><mi mathsize="120%">j</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\mbox{and}\quad M_{j}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex5.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex5.m3" class="ltx_Math" alttext="\displaystyle\sup\{f(x)\&gt;:\&gt;a_{j-1}\leq x\leq a_{j}\}." display="inline"><semantics><mrow><mrow><mo mathsize="120%" movablelimits="false" rspace="0em">sup</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%" rspace="0.498em">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.498em">:</mo><mrow><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">≤</mo><mi mathsize="120%">x</mi><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\sup\{f(x)\&gt;:\&gt;a_{j-1}\leq x\leq a_{j}\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Note that these numbers exist, since </span><math id="Thmthm6c.p1.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is bounded. The </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">lower
+Riemann sum</span><span class="ltx_text" style="font-size:120%;"> of </span><math id="Thmthm6c.p1.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> with respect to </span><math id="Thmthm6c.p1.m8" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is</span></p>
+<div id="Ch4.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex6.m1" class="ltx_Math" alttext="l_{\mathscr{D}}(f)=\sum_{j=1}^{n}m_{j}(a_{j}-a_{j-1})," display="block"><semantics><mrow><mrow><mrow><msub><mi mathsize="120%">l</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover><mrow><msub><mi mathsize="120%">m</mi><mi mathsize="120%">j</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">l_{\mathscr{D}}(f)=\sum_{j=1}^{n}m_{j}(a_{j}-a_{j-1}),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and the </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">upper Riemann sum</span><span class="ltx_text" style="font-size:120%;"> of </span><math id="Thmthm6c.p1.m9" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> with respect to </span><math id="Thmthm6c.p1.m10" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is</span></p>
+<div id="Ch4.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex7.m1" class="ltx_Math" alttext="u_{\mathscr{D}}(f)=\sum_{j=1}^{n}M_{j}(a_{j}-a_{j-1})." display="block"><semantics><mrow><mrow><mrow><msub><mi mathsize="120%">u</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover><mrow><msub><mi mathsize="120%">M</mi><mi mathsize="120%">j</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">u_{\mathscr{D}}(f)=\sum_{j=1}^{n}M_{j}(a_{j}-a_{j-1}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><math id="Thmthm6c.p1.m11" class="ltx_Math" alttext="\Box" display="inline"><semantics><mi mathsize="144%" mathvariant="normal">□</mi><annotation encoding="application/x-tex">\Box</annotation></semantics></math><span class="ltx_text" style="font-size:144%;"> 
+<br class="ltx_break"></span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The idea is that a dissection of size </span><math id="p4.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> divides </span><math id="p4.m2" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> into </span><math id="p4.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi mathsize="120%">n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+subintervals, </span><math id="p4.m4" class="ltx_Math" alttext="[a_{j-1},a_{j}]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a_{j-1},a_{j}]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for </span><math id="p4.m5" class="ltx_Math" alttext="j=1,2,\ldots,n" display="inline"><semantics><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">,</mo><mn mathsize="120%">2</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><mi mathsize="120%">n</mi></mrow></mrow><annotation encoding="application/x-tex">j=1,2,\ldots,n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. If </span><math id="p4.m6" class="ltx_Math" alttext="f(x)\geq 0" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">≥</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">f(x)\geq 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> for all </span><math id="p4.m7" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+then the lower
+Riemann sum can be visualized as the total area of the
+tallest rectangles with bases </span><math id="p4.m8" class="ltx_Math" alttext="[a_{j-1},a_{j}]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a_{j-1},a_{j}]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> which fit under
+the graph </span><math id="p4.m9" class="ltx_Math" alttext="y=f(x)" display="inline"><semantics><mrow><mi mathsize="120%">y</mi><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y=f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> between </span><math id="p4.m10" class="ltx_Math" alttext="x=a" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p4.m11" class="ltx_Math" alttext="x=b" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">b</mi></mrow><annotation encoding="application/x-tex">x=b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. So </span><math id="p4.m12" class="ltx_Math" alttext="l_{\mathscr{D}}(f)" display="inline"><semantics><mrow><msub><mi mathsize="120%">l</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">l_{\mathscr{D}}(f)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is an underestimate of
+the area under the
+graph. Similarly, the upper Riemann sum can be visualized as the
+total area of the shortest rectangles with bases </span><math id="p4.m13" class="ltx_Math" alttext="[a_{j-1},a_{j}]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a_{j-1},a_{j}]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> which the
+graph </span><math id="p4.m14" class="ltx_Math" alttext="y=f(x)" display="inline"><semantics><mrow><mi mathsize="120%">y</mi><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">y=f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> between </span><math id="p4.m15" class="ltx_Math" alttext="x=a" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p4.m16" class="ltx_Math" alttext="x=b" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">=</mo><mi mathsize="120%">b</mi></mrow><annotation encoding="application/x-tex">x=b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> fits under and is thus
+an overestimate of the area under the graph. This is illustrated below</span></p>
+</div>
+<div id="p5" class="ltx_para ltx_align_center">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="x1.png" id="p5.g1" class="ltx_graphics ltx_img_landscape" width="272" height="172" alt="[Uncaptioned image]"></div></td>
+<td class="ltx_td ltx_align_center"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="x2.png" id="p5.g2" class="ltx_graphics ltx_img_landscape" width="272" height="172" alt="[Uncaptioned image]"></div></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Thmthm7c" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercise 4.7</span></span></h6>
+<div id="Thmthm7c.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The function </span><math id="Thmthm7c.p1.m1" class="ltx_Math" alttext="f:[0,1]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[0,1]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+</span><math id="Thmthm7c.p1.m2" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is bounded. Compute its lower and upper Riemann sums with respect
+to the dissections</span></p>
+<div id="Ch4.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex8.m1" class="ltx_Math" alttext="\mathscr{D}_{1}=\{0,1\},\quad\mathscr{D}_{2}=\{0,\frac{1}{2},1\},\quad\mathscr%
+{D}_{3}=\{0,\frac{1}{2},\frac{3}{4},1\}" display="block"><semantics><mrow><mrow><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo mathsize="120%" rspace="1.367em">,</mo><mrow><mrow><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mfrac><mn mathsize="120%">1</mn><mn mathsize="120%">2</mn></mfrac><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo mathsize="120%" rspace="1.367em">,</mo><mrow><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">3</mn></msub><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mfrac><mn mathsize="120%">1</mn><mn mathsize="120%">2</mn></mfrac><mo mathsize="120%">,</mo><mfrac><mn mathsize="120%">3</mn><mn mathsize="120%">4</mn></mfrac><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathscr{D}_{1}=\{0,1\},\quad\mathscr{D}_{2}=\{0,\frac{1}{2},1\},\quad\mathscr%
+{D}_{3}=\{0,\frac{1}{2},\frac{3}{4},1\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">of </span><math id="Thmthm7c.p1.m3" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+Check your answers by watching this
+</span><a href="https://web.microsoftstream.com/video/4d3ef3c7-c946-47d7-ae50-84d0aae65bf8" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;">
+You should have found that</span></p>
+<div id="Ch4.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex9.m1" class="ltx_Math" alttext="l_{\mathscr{D}_{1}}\leq l_{\mathscr{D}_{2}}\leq l_{\mathscr{D}_{3}}\leq u_{%
+\mathscr{D}_{3}}\leq u_{\mathscr{D}_{2}}\leq u_{\mathscr{D}_{1}}." display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">l</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">1</mn></msub></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">l</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">2</mn></msub></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">l</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">3</mn></msub></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">u</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">3</mn></msub></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">u</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">2</mn></msub></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">u</mi><msub><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mn mathsize="120%">1</mn></msub></msub></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">l_{\mathscr{D}_{1}}\leq l_{\mathscr{D}_{2}}\leq l_{\mathscr{D}_{3}}\leq u_{%
+\mathscr{D}_{3}}\leq u_{\mathscr{D}_{2}}\leq u_{\mathscr{D}_{1}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">We will see shortly that this is no accident.</span></p>
+</div>
+</div>
+<div id="Thmthm8c" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposition 4.8</span></span></h6>
+<div id="Thmthm8c.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm8c.p1.m1" class="ltx_Math" alttext="f:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math> be bounded above by <math id="Thmthm8c.p1.m2" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> and below by <math id="Thmthm8c.p1.m3" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>,
+and let <math id="Thmthm8c.p1.m4" class="ltx_Math" alttext="\mathscr{D}" display="inline"><semantics><mi class="ltx_font_mathscript">𝒟</mi><annotation encoding="application/x-tex">\mathscr{D}</annotation></semantics></math> be any dissection of <math id="Thmthm8c.p1.m5" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math>. Then</span></p>
+<div id="Ch4.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex10.m1" class="ltx_Math" alttext="m(b-a)\leq l_{\mathscr{D}}(f)\leq u_{\mathscr{D}}(f)\leq M(b-a)." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">m</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">b</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">≤</mo><mrow><msub><mi mathsize="120%">l</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">≤</mo><mrow><msub><mi mathsize="120%">u</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">≤</mo><mrow><mi mathsize="120%">M</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">b</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">m(b-a)\leq l_{\mathscr{D}}(f)\leq u_{\mathscr{D}}(f)\leq M(b-a).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let
+</span><math id="p6.m1" class="ltx_Math" alttext="\mathscr{D}=\{a_{0},a_{1},\ldots,a_{n}\}" display="inline"><semantics><mrow><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi><mo mathsize="120%">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">…</mi><mo mathsize="120%">,</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathscr{D}=\{a_{0},a_{1},\ldots,a_{n}\}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p6.m2" class="ltx_Math" alttext="m_{j}" display="inline"><semantics><msub><mi mathsize="120%">m</mi><mi mathsize="120%">j</mi></msub><annotation encoding="application/x-tex">m_{j}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p6.m3" class="ltx_Math" alttext="M_{j}" display="inline"><semantics><msub><mi mathsize="120%">M</mi><mi mathsize="120%">j</mi></msub><annotation encoding="application/x-tex">M_{j}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> be defined
+as in Definition </span><a href="#Thmthm6c" title="Definition 4.6 ‣ 4.2 Dissections and Riemann sums ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">4.6</span></a><span class="ltx_text" style="font-size:120%;">. Then, for all </span><math id="p6.m4" class="ltx_Math" alttext="j" display="inline"><semantics><mi mathsize="120%">j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, </span><math id="p6.m5" class="ltx_Math" alttext="m\leq m_{j}\leq M_{j}\leq M" display="inline"><semantics><mrow><mi mathsize="120%">m</mi><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">m</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">≤</mo><msub><mi mathsize="120%">M</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">≤</mo><mi mathsize="120%">M</mi></mrow><annotation encoding="application/x-tex">m\leq m_{j}\leq M_{j}\leq M</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,
+so</span></p>
+<div id="Ch4.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex11.m1" class="ltx_Math" alttext="l_{\mathscr{D}}(f)=\sum_{j=1}^{n}m_{j}(a_{j}-a_{j-1})\leq\sum_{j=1}^{n}M_{j}(a%
+_{j}-a_{j-1})=u_{\mathscr{D}}(f)" display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">l</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover><mrow><msub><mi mathsize="120%">m</mi><mi mathsize="120%">j</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%" rspace="0.111em">≤</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover><mrow><msub><mi mathsize="120%">M</mi><mi mathsize="120%">j</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><msub><mi mathsize="120%">u</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">l_{\mathscr{D}}(f)=\sum_{j=1}^{n}m_{j}(a_{j}-a_{j-1})\leq\sum_{j=1}^{n}M_{j}(a%
+_{j}-a_{j-1})=u_{\mathscr{D}}(f)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx30" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch4.Ex14">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch4.Ex12.m1" class="ltx_Math" alttext="\displaystyle l_{\mathscr{D}}(f)" display="inline"><semantics><mrow><msub><mi mathsize="120%">l</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle l_{\mathscr{D}}(f)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex12.m2" class="ltx_Math" alttext="\displaystyle\geq" display="inline"><semantics><mo mathsize="120%">≥</mo><annotation encoding="application/x-tex">\displaystyle\geq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex12.m3" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}m(a_{j}-a_{j-1})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover></mstyle><mrow><mi mathsize="120%">m</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{j=1}^{n}m(a_{j}-a_{j-1})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex13.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex13.m2" class="ltx_Math" alttext="\displaystyle m\left\{(a_{1}-a_{0})+(a_{2}-a_{1})+(a_{3}-a_{2})+\cdots+(a_{n}-%
+a_{n-1})\right\}=m(a_{n}-a_{0})" display="inline"><semantics><mrow><mrow><mi mathsize="120%">m</mi><mo>⁢</mo><mrow><mo>{</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">3</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>}</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">m</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle m\left\{(a_{1}-a_{0})+(a_{2}-a_{1})+(a_{3}-a_{2})+\cdots+(a_{n}-%
+a_{n-1})\right\}=m(a_{n}-a_{0})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex14.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex14.m2" class="ltx_Math" alttext="\displaystyle m(b-a)" display="inline"><semantics><mrow><mi mathsize="120%">m</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">b</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle m(b-a)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ch7.S6.EGx31" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tbody id="Ch4.Ex17">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch4.Ex15.m1" class="ltx_Math" alttext="\displaystyle u_{\mathscr{D}}(f)" display="inline"><semantics><mrow><msub><mi mathsize="120%">u</mi><mi class="ltx_font_mathscript" mathsize="120%">𝒟</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">f</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle u_{\mathscr{D}}(f)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex15.m2" class="ltx_Math" alttext="\displaystyle\leq" display="inline"><semantics><mo mathsize="120%">≤</mo><annotation encoding="application/x-tex">\displaystyle\leq</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex15.m3" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}M(a_{j}-a_{j-1})" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">n</mi></munderover></mstyle><mrow><mi mathsize="120%">M</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">j</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">j</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{j=1}^{n}M(a_{j}-a_{j-1})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex16.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex16.m2" class="ltx_Math" alttext="\displaystyle M\left\{(a_{1}-a_{0})+(a_{2}-a_{1})+(a_{3}-a_{2})+\cdots+(a_{n}-%
+a_{n-1})\right\}=M(a_{n}-a_{0})" display="inline"><semantics><mrow><mrow><mi mathsize="120%">M</mi><mo>⁢</mo><mrow><mo>{</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">3</mn></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>}</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">M</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">−</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle M\left\{(a_{1}-a_{0})+(a_{2}-a_{1})+(a_{3}-a_{2})+\cdots+(a_{n}-%
+a_{n-1})\right\}=M(a_{n}-a_{0})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="Ch4.Ex17.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><semantics><mo mathsize="120%">=</mo><annotation encoding="application/x-tex">\displaystyle=</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch4.Ex17.m2" class="ltx_Math" alttext="\displaystyle M(b-a)" display="inline"><semantics><mrow><mi mathsize="120%">M</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">b</mi><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle M(b-a)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">since the sums “telescope.”
+∎</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

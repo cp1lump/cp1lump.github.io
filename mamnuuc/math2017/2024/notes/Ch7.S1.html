@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>7.1 Convergence tests for series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis‣ Chapter 7 Power series ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch7.S2.html" title="7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S2.html" title="7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S3.html" title="7.3 Uniform convergence of series of functions ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S4.html" title="7.4 Differentiability of power series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S5.html" title="7.5 Properties of the exponential function ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch7.S6.html" title="7.6 Analyticity versus smoothness ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a></li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="7.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="7.1 Convergence tests for series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.1 </span></b>Convergence tests for series</a></li>
+<li data-level="7.2" data-path="Ch7.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S2.html" title="7.2 Power series and their radius of convergence ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.2 </span></b>Power series and their radius of convergence</a></li>
+<li data-level="7.3" data-path="Ch7.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S3.html" title="7.3 Uniform convergence of series of functions ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.3 </span></b>Uniform convergence of series of functions</a></li>
+<li data-level="7.4" data-path="Ch7.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S4.html" title="7.4 Differentiability of power series ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.4 </span></b>Differentiability of power series</a></li>
+<li data-level="7.5" data-path="Ch7.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S5.html" title="7.5 Properties of the exponential function ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.5 </span></b>Properties of the exponential function</a></li>
+<li data-level="7.6" data-path="Ch7.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch7.S6.html" title="7.6 Analyticity versus smoothness ‣ Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7.6 </span></b>Analyticity versus smoothness</a></li>
+</ol>
+</li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Convergence tests for series</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">7.1</span> Convergence tests for series</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">We begin with a brisk review of the basics concerning convergence of series. All this material was covered in detail in MATH1026. (The main ideas were covered in MATH1055, albeit with some of the proofs omitted.)</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Recall that a </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">series</span><span class="ltx_text" style="font-size:120%;"> is a formal infinite sum</span></p>
+<div id="Ch7.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex1.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}a_{n}=a_{0}+a_{1}+a_{2}+\cdots," display="block"><semantics><mrow><mrow><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><mo mathsize="120%">=</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">+</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">+</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">2</mn></msub><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}a_{n}=a_{0}+a_{1}+a_{2}+\cdots,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">that its </span><math id="p2.m1" class="ltx_Math" alttext="k^{\rm th}" display="inline"><semantics><msup><mi mathsize="120%">k</mi><mi mathsize="120%">th</mi></msup><annotation encoding="application/x-tex">k^{\rm th}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">partial sum</span><span class="ltx_text" style="font-size:120%;"> is the real number</span></p>
+<div id="Ch7.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex2.m1" class="ltx_Math" alttext="s_{k}:=\sum_{n=0}^{k}a_{n}=a_{0}+a_{1}+\cdots+a_{k}," display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo lspace="0.278em" mathsize="120%" rspace="0.111em">:=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></munderover><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><mo mathsize="120%">=</mo><mrow><msub><mi mathsize="120%">a</mi><mn mathsize="120%">0</mn></msub><mo mathsize="120%">+</mo><msub><mi mathsize="120%">a</mi><mn mathsize="120%">1</mn></msub><mo mathsize="120%">+</mo><mi mathsize="120%" mathvariant="normal">⋯</mi><mo mathsize="120%">+</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">k</mi></msub></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">s_{k}:=\sum_{n=0}^{k}a_{n}=a_{0}+a_{1}+\cdots+a_{k},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and that the series </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">converges</span><span class="ltx_text" style="font-size:120%;"> precisely if the sequence </span><math id="p2.m2" class="ltx_Math" alttext="(s_{k})" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(s_{k})</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges (in the sense of Definition
+</span><a href="Ch1.S1.html#Thmthm1a" title="Definition 1.1 ‣ 1.1 The limit of a convergent sequence ‣ Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">1.1</span></a><span class="ltx_text" style="font-size:120%;">). In this case, we also use </span><math id="p2.m3" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}a_{n}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n=0}^{\infty}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> to denote its limit.</span></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The series </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">converges absolutely</span><span class="ltx_text" style="font-size:120%;"> if</span></p>
+<div id="Ch7.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex3.m1" class="ltx_Math" alttext="\sum_{n=0}^{\infty}|a_{n}|" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><mrow><mo lspace="0em" maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty}|a_{n}|</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">converges. Absolute convergence implies convergence, but convergence does </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">not</span><span class="ltx_text" style="font-size:120%;"> imply absolute
+convergence. For example, the </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">alternating harmonic series</span><span class="ltx_text" style="font-size:120%;"></span></p>
+<div id="Ch7.Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex4.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n}}{n}" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">n</mi></msup><mi mathsize="120%">n</mi></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}\frac{(-1)^{n}}{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">converges (see Example </span><a href="Ch3.S5.html#Thmthm23b" title="Example 3.23 (The Alternating Harmonic Series) ‣ 3.5 Higher derivatives and Taylor’s Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.23</span></a><span class="ltx_text" style="font-size:120%;">), but it does not converge
+absolutely since the </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">harmonic series</span><span class="ltx_text" style="font-size:120%;"></span></p>
+<div id="Ch7.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex5.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}\frac{1}{n}" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}\frac{1}{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">diverges.</span></p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If a series </span><math id="p4.m1" class="ltx_Math" alttext="\displaystyle\sum_{n=0}^{\infty}a_{n}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{n=0}^{\infty}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges then its sequence of terms </span><math id="p4.m2" class="ltx_Math" alttext="(a_{n})" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(a_{n})</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges to </span><math id="p4.m3" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">. This fact is often called the </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">Divergence Test</span><span class="ltx_text" style="font-size:120%;"> since we can apply its contrapositive: if </span><math id="p4.m4" class="ltx_Math" alttext="a_{n}\nrightarrow 0" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%" stretchy="false">↛</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}\nrightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> then
+</span><math id="p4.m5" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> diverges. Note that the </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">converse is false</span><span class="ltx_text" style="font-size:120%;">, as illustrated by the harmonic series: the sequence of terms </span><math id="p4.m6" class="ltx_Math" alttext="a_{n}=1/n\rightarrow 0" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow><mo mathsize="120%" stretchy="false">→</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}=1/n\rightarrow 0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, but the corresponding </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">series</span><span class="ltx_text" style="font-size:120%;"> </span><math id="p4.m7" class="ltx_Math" alttext="\sum_{n=1}^{\infty}a_{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> diverges.</span></p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If all the terms of a series are positive, </span><math id="p5.m1" class="ltx_Math" alttext="a_{n}&gt;0" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, then the sequence of partial sums </span><math id="p5.m2" class="ltx_Math" alttext="s_{k}=\sum_{n=0}^{k}a_{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mi mathsize="120%">k</mi></msubsup><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">s_{k}=\sum_{n=0}^{k}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is an increasing sequence,</span></p>
+<div id="Ch7.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex6.m1" class="ltx_Math" alttext="s_{k+1}=s_{k}+a_{k+1}&gt;s_{k}," display="block"><semantics><mrow><mrow><msub><mi mathsize="120%">s</mi><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msub><mo mathsize="120%">=</mo><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo mathsize="120%">+</mo><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">k</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msub></mrow><mo mathsize="120%">&gt;</mo><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">s_{k+1}=s_{k}+a_{k+1}&gt;s_{k},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">so, by the Monotone Convergence Theorem, the series converges if (and only if) </span><math id="p5.m3" class="ltx_Math" alttext="s_{k}" display="inline"><semantics><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><annotation encoding="application/x-tex">s_{k}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is bounded above. This observation allows one to establish several useful convergence tests applicable to the case
+</span><math id="p5.m4" class="ltx_Math" alttext="a_{n}&gt;0" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. The first allows us to prove convergence (or divergence) of a series </span><math id="p5.m5" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> by comparing it with a (simpler) series </span><math id="p5.m6" class="ltx_Math" alttext="\sum b_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum b_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> that we already know converges (or diverges).</span></p>
+</div>
+<div id="Thmthm1g" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 7.1</span></span><span class="ltx_text ltx_font_bold"> </span>(The Comparison Test)</h6>
+<div id="Thmthm1g.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm1g.p1.m1" class="ltx_Math" alttext="a_{n}&gt;0" display="inline"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo mathvariant="normal">&gt;</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">a_{n}&gt;0</annotation></semantics></math> and <math id="Thmthm1g.p1.m2" class="ltx_Math" alttext="b_{n}&gt;0" display="inline"><semantics><mrow><msub><mi>b</mi><mi>n</mi></msub><mo mathvariant="normal">&gt;</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">b_{n}&gt;0</annotation></semantics></math>.</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">If </span><math id="I1.i1.p1.m1" class="ltx_Math" alttext="a_{n}/b_{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">a_{n}/b_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> is bounded above and </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="\sum b_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum b_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> converges, then </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> converges.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">If </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="b_{n}/a_{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">b_{n}/a_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> is bounded above and </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="\sum{b_{n}}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum{b_{n}}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> diverges, then </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> diverges.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">To use the comparison test effectively, you need a stock of simple example series whose convergence/divergence you’ve already established. Here’s a useful and simple family of examples:</span></p>
+</div>
+<div id="Thmthm2f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.2</span></span></h6>
+<div id="Thmthm2f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Claim: </span><math id="Thmthm2f.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}\frac{1}{n^{p}}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn mathsize="120%">1</mn><msup><mi mathsize="120%">n</mi><mi mathsize="120%">p</mi></msup></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}\frac{1}{n^{p}}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, where </span><math id="Thmthm2f.p1.m2" class="ltx_Math" alttext="p\in(0,\infty)" display="inline"><semantics><mrow><mi mathsize="120%">p</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%" mathvariant="normal">∞</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">p\in(0,\infty)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, converges if </span><math id="Thmthm2f.p1.m3" class="ltx_Math" alttext="p&gt;1" display="inline"><semantics><mrow><mi mathsize="120%">p</mi><mo mathsize="120%">&gt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">p&gt;1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and diverges if </span><math id="Thmthm2f.p1.m4" class="ltx_Math" alttext="0&lt;p\leq 1" display="inline"><semantics><mrow><mn mathsize="120%">0</mn><mo mathsize="120%">&lt;</mo><mi mathsize="120%">p</mi><mo mathsize="120%">≤</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">0&lt;p\leq 1</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Exercise. The idea is to bound</span></p>
+<div id="Ch7.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex7.m1" class="ltx_Math" alttext="s_{k}=\sum_{n=1}^{k}\frac{1}{n^{p}}" display="block"><semantics><mrow><msub><mi mathsize="120%">s</mi><mi mathsize="120%">k</mi></msub><mo mathsize="120%" rspace="0.111em">=</mo><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%">k</mi></munderover><mfrac><mn mathsize="120%">1</mn><msup><mi mathsize="120%">n</mi><mi mathsize="120%">p</mi></msup></mfrac></mrow></mrow><annotation encoding="application/x-tex">s_{k}=\sum_{n=1}^{k}\frac{1}{n^{p}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">in terms of</span></p>
+<div id="Ch7.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex8.m1" class="ltx_Math" alttext="\int_{1}^{k}\frac{1}{x^{p}}dx." display="block"><semantics><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">1</mn><mi mathsize="120%">k</mi></msubsup><mrow><mfrac><mn mathsize="120%">1</mn><msup><mi mathsize="120%">x</mi><mi mathsize="120%">p</mi></msup></mfrac><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{1}^{k}\frac{1}{x^{p}}dx.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">If you get stuck, watch this </span><a href="https://web.microsoftstream.com/video/bd6a8ad6-1526-495c-9be6-fd62f4d572fd" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;">.
+∎</span></p>
+</div>
+</div>
+<div id="Thmthm3f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.3</span></span></h6>
+<div id="Thmthm3f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Claim: </span><math id="Thmthm3f.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}\frac{n}{n^{2}+1}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mi mathsize="120%">n</mi><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}\frac{n}{n^{2}+1}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> diverges.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let </span><math id="p8.m1" class="ltx_Math" alttext="a_{n}=n/(n^{2}+1)" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">n</mi><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">a_{n}=n/(n^{2}+1)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p8.m2" class="ltx_Math" alttext="b_{n}=1/n" display="inline"><semantics><mrow><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mi mathsize="120%">n</mi></mrow></mrow><annotation encoding="application/x-tex">b_{n}=1/n</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Then</span></p>
+<div id="Ch7.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex9.m1" class="ltx_Math" alttext="\frac{b_{n}}{a_{n}}=\frac{n^{2}+1}{n^{2}}=1+\frac{1}{n^{2}}\leq 2," display="block"><semantics><mrow><mrow><mfrac><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mfrac><mo mathsize="120%">=</mo><mfrac><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup></mfrac><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mfrac><mn mathsize="120%">1</mn><msup><mi mathsize="120%">n</mi><mn mathsize="120%">2</mn></msup></mfrac></mrow><mo mathsize="120%">≤</mo><mn mathsize="120%">2</mn></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\frac{b_{n}}{a_{n}}=\frac{n^{2}+1}{n^{2}}=1+\frac{1}{n^{2}}\leq 2,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">so the sequence </span><math id="p8.m3" class="ltx_Math" alttext="(b_{n}/a_{n})" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><annotation encoding="application/x-tex">(b_{n}/a_{n})</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is bounded above. Since </span><math id="p8.m4" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}b_{n}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><msub><mi mathsize="120%">b</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}b_{n}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> diverges, we conclude from part (ii) of the Comparison Test that </span><math id="p8.m5" class="ltx_Math" alttext="sum_{n=1}^{\infty}a_{n}" display="inline"><semantics><mrow><mi mathsize="120%">s</mi><mo>⁢</mo><mi mathsize="120%">u</mi><mo>⁢</mo><msubsup><mi mathsize="120%">m</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">sum_{n=1}^{\infty}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> also diverges.
+∎</span></p>
+</div>
+</div>
+<div id="Thmthm4f" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Exercise 7.4</span></span></h6>
+<div id="Thmthm4f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Determine whether </span><math id="Thmthm4f.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}\frac{n\sin n}{n^{3}+2}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><mi mathsize="120%">n</mi><mo lspace="0.167em">⁢</mo><mrow><mi mathsize="120%">sin</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">n</mi></mrow></mrow><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">3</mn></msup><mo mathsize="120%">+</mo><mn mathsize="120%">2</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}\frac{n\sin n}{n^{3}+2}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges. If you get stuck, watch this
+</span><a href="https://web.microsoftstream.com/video/bb774ea0-debd-4dd2-8f0f-2039686b24f7" title="" class="ltx_ref ltx_href" style="font-size:120%;color:#FF0000;">[VIDEO]</a><span class="ltx_text" style="font-size:120%;"></span></p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Our next convergence test is perhaps the most useful – as well as being the easiest to use!</span></p>
+</div>
+<div id="Thmthm5f" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 7.5</span></span><span class="ltx_text ltx_font_bold"> </span>(The Ratio Test)</h6>
+<div id="Thmthm5f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let
+<math id="Thmthm5f.p1.m1" class="ltx_Math" alttext="a_{n}&gt;0" display="inline"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo mathvariant="normal">&gt;</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">a_{n}&gt;0</annotation></semantics></math> for all <math id="Thmthm5f.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> and <math id="Thmthm5f.p1.m3" class="ltx_Math" alttext="a_{n+1}/a_{n}\rightarrow L" display="inline"><semantics><mrow><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo mathvariant="normal">+</mo><mn mathvariant="normal">1</mn></mrow></msub><mo mathvariant="normal">/</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">a_{n+1}/a_{n}\rightarrow L</annotation></semantics></math>. Then</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">if </span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="L&lt;1" display="inline"><semantics><mrow><mi mathsize="120%">L</mi><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">L&lt;1</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;">, the series </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> converges,</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">if </span><math id="I2.i2.p1.m1" class="ltx_Math" alttext="L&gt;1" display="inline"><semantics><mrow><mi mathsize="120%">L</mi><mo mathsize="120%">&gt;</mo><mn mathsize="120%">1</mn></mrow><annotation encoding="application/x-tex">L&gt;1</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;">, the series </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic" style="font-size:120%;"> diverges.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmthm6f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.6</span></span></h6>
+<div id="Thmthm6f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Claim: </span><math id="Thmthm6f.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}n^{50}\left(\frac{49}{50}\right)^{n}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">50</mn></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mn mathsize="120%">49</mn><mn mathsize="120%">50</mn></mfrac></mstyle><mo>)</mo></mrow><mi mathsize="120%">n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}n^{50}\left(\frac{49}{50}\right)^{n}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p10" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Let </span><math id="p10.m1" class="ltx_Math" alttext="a_{n}=n^{50}(49/50)^{n}&gt;0" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><msup><mi mathsize="120%">n</mi><mn mathsize="120%">50</mn></msup><mo>⁢</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mn mathsize="120%">49</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mn mathsize="120%">50</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi mathsize="120%">n</mi></msup></mrow><mo mathsize="120%">&gt;</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">a_{n}=n^{50}(49/50)^{n}&gt;0</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, and note that</span></p>
+<div id="Ch7.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex10.m1" class="ltx_Math" alttext="\frac{a_{n+1}}{a_{n}}=\frac{(n+1)^{50}}{n^{50}}\frac{49}{50}=\left(1+\frac{1}{%
+n}\right)^{50}\frac{49}{50}\rightarrow\frac{49}{50}&lt;1." display="block"><semantics><mrow><mrow><mfrac><msub><mi mathsize="120%">a</mi><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msub><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mfrac><mo mathsize="120%">=</mo><mrow><mfrac><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mn mathsize="120%">50</mn></msup><msup><mi mathsize="120%">n</mi><mn mathsize="120%">50</mn></msup></mfrac><mo>⁢</mo><mfrac><mn mathsize="120%">49</mn><mn mathsize="120%">50</mn></mfrac></mrow><mo mathsize="120%">=</mo><mrow><msup><mrow><mo>(</mo><mrow><mn mathsize="120%">1</mn><mo mathsize="120%">+</mo><mfrac><mn mathsize="120%">1</mn><mi mathsize="120%">n</mi></mfrac></mrow><mo>)</mo></mrow><mn mathsize="120%">50</mn></msup><mo>⁢</mo><mfrac><mn mathsize="120%">49</mn><mn mathsize="120%">50</mn></mfrac></mrow><mo mathsize="120%" stretchy="false">→</mo><mfrac><mn mathsize="120%">49</mn><mn mathsize="120%">50</mn></mfrac><mo mathsize="120%">&lt;</mo><mn mathsize="120%">1</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\frac{a_{n+1}}{a_{n}}=\frac{(n+1)^{50}}{n^{50}}\frac{49}{50}=\left(1+\frac{1}{%
+n}\right)^{50}\frac{49}{50}\rightarrow\frac{49}{50}&lt;1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Hence, by the Ratio Test, </span><math id="p10.m2" class="ltx_Math" alttext="\sum_{n=1}^{\infty}a_{n}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></msubsup><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges.
+∎</span></p>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Note that if the terms </span><math id="p11.m1" class="ltx_Math" alttext="a_{n}" display="inline"><semantics><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><annotation encoding="application/x-tex">a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> of your series aren’t all positive, you can always try applying the Comparison or Ratio Test to </span><math id="p11.m2" class="ltx_Math" alttext="\sum|a_{n}|" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" rspace="0em" stretchy="true">∑</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum|a_{n}|</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+to determine whether </span><math id="p11.m3" class="ltx_Math" alttext="\sum a_{n}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∑</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow><annotation encoding="application/x-tex">\sum a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converge absolutely. If it does, it certainly converges. Discarding all information about the sign
+of </span><math id="p11.m4" class="ltx_Math" alttext="a_{n}" display="inline"><semantics><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><annotation encoding="application/x-tex">a_{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> does lose us potentially vital knowledge, however. If the
+terms </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">alternate</span><span class="ltx_text" style="font-size:120%;"> in sign, we have a particularly neat convergence test:</span></p>
+</div>
+<div id="Thmthm7f" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 7.7</span></span><span class="ltx_text ltx_font_bold"> </span>(The Alternating Series Test)</h6>
+<div id="Thmthm7f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm7f.p1.m1" class="ltx_Math" alttext="(a_{n})" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a_{n})</annotation></semantics></math> be a positive, decreasing sequence that converges to <math id="Thmthm7f.p1.m2" class="ltx_Math" alttext="0" display="inline"><mn mathvariant="normal">0</mn></math>. Then</span></p>
+<div id="Ch7.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch7.Ex11.m1" class="ltx_Math" alttext="\sum_{n=1}^{\infty}(-1)^{n+1}a_{n}" display="block"><semantics><mrow><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo lspace="0em" maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup><mo>⁢</mo><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}(-1)^{n+1}a_{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">converges.</span></p>
+</div>
+</div>
+<div id="Thmthm8f" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 7.8</span></span></h6>
+<div id="Thmthm8f.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">The series </span><math id="Thmthm8f.p1.m1" class="ltx_Math" alttext="\displaystyle{\sum_{n=1}^{\infty}(-1)^{n+1}\frac{1}{\sqrt{n}}}" display="inline"><semantics><mrow><mstyle displaystyle="true"><munderover><mo maxsize="120%" minsize="120%" movablelimits="false" stretchy="true">∑</mo><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">=</mo><mn mathsize="120%">1</mn></mrow><mi mathsize="120%" mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mrow><mi mathsize="120%">n</mi><mo mathsize="120%">+</mo><mn mathsize="120%">1</mn></mrow></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn mathsize="120%">1</mn><msqrt><mi mathsize="120%">n</mi></msqrt></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{\sum_{n=1}^{\infty}(-1)^{n+1}\frac{1}{\sqrt{n}}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> converges, by the Alternating Series Test, since </span><math id="Thmthm8f.p1.m2" class="ltx_Math" alttext="a_{n}=1/\sqrt{n}" display="inline"><semantics><mrow><msub><mi mathsize="120%">a</mi><mi mathsize="120%">n</mi></msub><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><msqrt><mi mathsize="120%">n</mi></msqrt></mrow></mrow><annotation encoding="application/x-tex">a_{n}=1/\sqrt{n}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is positive, decreasing and converges to </span><math id="Thmthm8f.p1.m3" class="ltx_Math" alttext="0" display="inline"><mn mathsize="120%">0</mn></math><span class="ltx_text" style="font-size:120%;">. As usual with convergence tests, we’ve proved that the series converges but have no idea what its limit is.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch7.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch7.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

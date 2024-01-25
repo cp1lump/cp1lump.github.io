@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis</title>
+<!--Generated on Thu Jan 25 15:03:12 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="up" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="up up" href="index.html" title="MATH2017 Real Analysis">
+<link rel="start" href="index.html" title="MATH2017 Real Analysis">
+<link rel="prev" href="Ch5.S1.html" title="5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="next" href="Ch5.S3.html" title="5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch5.S1.html" title="5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="section" href="Ch5.S3.html" title="5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="MATH2017 Real Analysis" class="ltx_ref" rel="start">MATH2017 Real Analysis</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Ch0.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch0.html" title="Chapter 0 What are we going to study? Why? ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">0</span> </span></b><span class="ltx_text" style="font-size:120%;">What are we going to study? Why?</span></a></li>
+<li data-level="" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="Chapter 1 Limits and continuity ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">1</span> </span></b><span class="ltx_text" style="font-size:120%;">Limits and continuity</span></a></li>
+<li data-level="" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="Chapter 2 Differentiable functions ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">2</span> </span></b><span class="ltx_text" style="font-size:120%;">Differentiable functions</span></a></li>
+<li data-level="" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">3</span> </span></b><span class="ltx_text" style="font-size:120%;">Functions differentiable on an interval</span></a></li>
+<li data-level="" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">4</span> </span></b><span class="ltx_text" style="font-size:120%;">Integration</span></a></li>
+<li data-level="" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch5.html" title="Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">5</span> </span></b><span class="ltx_text" style="font-size:120%;">The Fundamental Theorem of the Calculus</span></a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="5.1" data-path="Ch5.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S1.html" title="5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.1 </span></b>The first form and the Intermediate Value Theorem</a></li>
+<li data-level="5.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.2 </span></b>The second form and a practical method for computing integrals</a></li>
+<li data-level="5.3" data-path="Ch5.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch5.S3.html" title="5.3 The natural logarithm ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5.3 </span></b>The natural logarithm</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="Chapter 6 Uniform convergence ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">6</span> </span></b><span class="ltx_text" style="font-size:120%;">Uniform convergence</span></a></li>
+<li data-level="" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="Chapter 7 Power series ‣ MATH2017 Real Analysis" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref"><span class="ltx_text" style="font-size:120%;">7</span> </span></b><span class="ltx_text" style="font-size:120%;">Power series</span></a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>The second form and a practical method for computing integrals</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner">
+<section class="ltx_section ltx_authors_1line normal">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_section header-section-number">5.2</span> The second form and a practical method for computing integrals</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Theorem </span><a href="Ch5.S1.html#Thmthm1e" title="Theorem 5.1 (Fundamental Theorem of the Calculus version 1) ‣ 5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.1</span></a><span class="ltx_text" style="font-size:120%;"> immediately implies a second
+theorem, also called the Fundamental Theorem of the Calculus,
+which renders the job of computing many Riemann integrals almost
+trivial:</span></p>
+</div>
+<div id="Thmthm4d" class="ltx_theorem ltx_theorem_thm">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Theorem 5.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Fundamental Theorem of the Calculus version 2)</h6>
+<div id="Thmthm4d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let 
+<br class="ltx_break"><math id="Thmthm4d.p1.m1" class="ltx_Math" alttext="f:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math> be continuous and <math id="Thmthm4d.p1.m2" class="ltx_Math" alttext="F:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi>F</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">F:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math> be any
+differentiable function such that <math id="Thmthm4d.p1.m3" class="ltx_Math" alttext="F^{\prime}=f" display="inline"><semantics><mrow><msup><mi>F</mi><mo mathvariant="normal">′</mo></msup><mo mathvariant="normal">=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">F^{\prime}=f</annotation></semantics></math>. Then</span></p>
+<div id="Ch5.Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex14.m1" class="ltx_Math" alttext="\int_{a}^{b}f=F(b)-F(a)." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f=F(b)-F(a).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Define the function </span><math id="p2.m1" class="ltx_Math" alttext="g:[a,b]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">g</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[a,b]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch5.Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex15.m1" class="ltx_Math" alttext="g(x)=\left(\int_{a}^{x}f\right)-F(x)." display="block"><semantics><mrow><mrow><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo>(</mo><mrow><msubsup><mo lspace="0em" maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">x</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo>)</mo></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">g(x)=\left(\int_{a}^{x}f\right)-F(x).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Then, by Theorem </span><a href="Ch5.S1.html#Thmthm1e" title="Theorem 5.1 (Fundamental Theorem of the Calculus version 1) ‣ 5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.1</span></a><span class="ltx_text" style="font-size:120%;"> and the definition of </span><math id="p2.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi mathsize="120%">F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch5.Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex16.m1" class="ltx_Math" alttext="g^{\prime}(x)=f(x)-f(x)=0" display="block"><semantics><mrow><mrow><msup><mi mathsize="120%">g</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">g^{\prime}(x)=f(x)-f(x)=0</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">for all </span><math id="p2.m3" class="ltx_Math" alttext="x\in[a,b]" display="inline"><semantics><mrow><mi mathsize="120%">x</mi><mo mathsize="120%">∈</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Hence, by Proposition </span><a href="Ch3.S2.html#Thmthm11b" title="Proposition 3.11 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.11</span></a><span class="ltx_text" style="font-size:120%;">, </span><math id="p2.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi mathsize="120%">g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is constant,
+so </span><math id="p2.m5" class="ltx_Math" alttext="g(b)=g(a)" display="inline"><semantics><mrow><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">g</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">g(b)=g(a)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, that is</span></p>
+<div id="Ch5.Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex17.m1" class="ltx_Math" alttext="\left(\int_{a}^{b}f\right)-F(b)=\left(\int_{a}^{a}f\right)-F(a)=0-F(a)," display="block"><semantics><mrow><mrow><mrow><mrow><mo>(</mo><mrow><msubsup><mo lspace="0em" maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo>)</mo></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo>(</mo><mrow><msubsup><mo lspace="0em" maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">a</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo>)</mo></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><mn mathsize="120%">0</mn><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">\left(\int_{a}^{b}f\right)-F(b)=\left(\int_{a}^{a}f\right)-F(a)=0-F(a),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">and the result immediately follows.
+∎</span></p>
+</div>
+</div>
+<div id="Thmthm5d" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 5.5</span></span></h6>
+<div id="Thmthm5d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Compute the Riemann integrals</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle{\int_{-1}^{1}x^{2}\,dx}" display="inline"><semantics><mrow><mstyle displaystyle="true"><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mn mathsize="120%">1</mn></msubsup></mstyle><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{\int_{-1}^{1}x^{2}\,dx}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle{\int_{0}^{\pi}\sin x\,dx}" display="inline"><semantics><mrow><mstyle displaystyle="true"><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mi mathsize="120%">π</mi></msubsup></mstyle><mrow><mi mathsize="120%">sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi mathsize="120%">x</mi><mo lspace="0.170em">⁢</mo><mi mathsize="120%">d</mi><mo>⁢</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{\int_{0}^{\pi}\sin x\,dx}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">,</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:120%;">Solution</span><span class="ltx_text" style="font-size:120%;">
+(i)
+Let </span><math id="p3.m1" class="ltx_Math" alttext="f(x)=x^{2}" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{2}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p3.m2" class="ltx_Math" alttext="F(x)=x^{3}/3" display="inline"><semantics><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><msup><mi mathsize="120%">x</mi><mn mathsize="120%">3</mn></msup><mo maxsize="120%" minsize="120%" stretchy="true" symmetric="true">/</mo><mn mathsize="120%">3</mn></mrow></mrow><annotation encoding="application/x-tex">F(x)=x^{3}/3</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Then </span><math id="p3.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous and </span><math id="p3.m4" class="ltx_Math" alttext="F^{\prime}=f" display="inline"><semantics><mrow><msup><mi mathsize="120%">F</mi><mo mathsize="120%">′</mo></msup><mo mathsize="120%">=</mo><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">F^{\prime}=f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+on </span><math id="p3.m5" class="ltx_Math" alttext="[-1,1]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo mathsize="120%">,</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so, by Theorem </span><a href="#Thmthm4d" title="Theorem 5.4 (Fundamental Theorem of the Calculus version 2) ‣ 5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.4</span></a><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch5.Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex18.m1" class="ltx_Math" alttext="\int_{-1}^{1}f=F(1)-F(-1)=\frac{2}{3}." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mn mathsize="120%">1</mn></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">1</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mn mathsize="120%">1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mfrac><mn mathsize="120%">2</mn><mn mathsize="120%">3</mn></mfrac></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{-1}^{1}f=F(1)-F(-1)=\frac{2}{3}.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">(ii)
+Let </span><math id="p4.m1" class="ltx_Math" alttext="f(x)=\sin x" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">sin</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\sin x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p4.m2" class="ltx_Math" alttext="F(x)=-\cos x" display="inline"><semantics><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mo mathsize="120%" rspace="0.167em">−</mo><mrow><mi mathsize="120%">cos</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">F(x)=-\cos x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Then </span><math id="p4.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is continuous and </span><math id="p4.m4" class="ltx_Math" alttext="F^{\prime}=f" display="inline"><semantics><mrow><msup><mi mathsize="120%">F</mi><mo mathsize="120%">′</mo></msup><mo mathsize="120%">=</mo><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">F^{\prime}=f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+on </span><math id="p4.m5" class="ltx_Math" alttext="[0,\pi]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%">π</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[0,\pi]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> so, by Theorem </span><a href="#Thmthm4d" title="Theorem 5.4 (Fundamental Theorem of the Calculus version 2) ‣ 5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.4</span></a><span class="ltx_text" style="font-size:120%;">,</span></p>
+<div id="Ch5.Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex19.m1" class="ltx_Math" alttext="\int_{0}^{\pi}f=F(\pi)-F(0)=-\cos\pi+\cos 0=2." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mi mathsize="120%">π</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">π</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo mathsize="120%" rspace="0.167em">−</mo><mrow><mi mathsize="120%">cos</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">π</mi></mrow></mrow><mo mathsize="120%">+</mo><mrow><mi mathsize="120%">cos</mi><mo lspace="0.167em">⁡</mo><mn mathsize="120%">0</mn></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">2</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{\pi}f=F(\pi)-F(0)=-\cos\pi+\cos 0=2.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Sometimes we can use the Fundamental Theorem of the Calculus to compute an integral even when we </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">can’t</span><span class="ltx_text" style="font-size:120%;"> write down an antiderivative of the integrand.
+Before giving an example, we will need a quick proposition:</span></p>
+</div>
+<div id="Thmthm6d" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposition 5.6</span></span></h6>
+<div id="Thmthm6d.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:120%;">Let <math id="Thmthm6d.p1.m1" class="ltx_Math" alttext="f:[-a,a]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">[</mo><mrow><mo mathvariant="normal">−</mo><mi>a</mi></mrow><mo mathvariant="normal">,</mo><mi>a</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[-a,a]\rightarrow{\mathbb{R}}</annotation></semantics></math> be a continuous odd function
+(meaning <math id="Thmthm6d.p1.m2" class="ltx_Math" alttext="f(-x)=-f(x)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><mo mathvariant="normal">−</mo><mi>x</mi></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal">−</mo><mrow><mi>f</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>x</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">f(-x)=-f(x)</annotation></semantics></math> for all <math id="Thmthm6d.p1.m3" class="ltx_Math" alttext="x\in[-a,a]" display="inline"><semantics><mrow><mi>x</mi><mo mathvariant="normal">∈</mo><mrow><mo mathvariant="normal" stretchy="false">[</mo><mrow><mo mathvariant="normal">−</mo><mi>a</mi></mrow><mo mathvariant="normal">,</mo><mi>a</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[-a,a]</annotation></semantics></math>). Then</span></p>
+<div id="Ch5.Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex20.m1" class="ltx_Math" alttext="\int_{-a}^{a}f=0." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mi mathsize="120%">a</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{-a}^{a}f=0.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof" style="font-size:120%;">Proof.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Define </span><math id="p6.m1" class="ltx_Math" alttext="F:[0,a]\rightarrow{\mathbb{R}}" display="inline"><semantics><mrow><mi mathsize="120%">F</mi><mo lspace="0.278em" mathsize="120%" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">[</mo><mn mathsize="120%">0</mn><mo mathsize="120%">,</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo mathsize="120%" stretchy="false">→</mo><mi mathsize="120%">ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">F:[0,a]\rightarrow{\mathbb{R}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> by</span></p>
+<div id="Ch5.Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex21.m1" class="ltx_Math" alttext="F(x)=\int_{-x}^{x}f=\int_{-x}^{0}f+\int_{0}^{x}f" display="block"><semantics><mrow><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mi mathsize="120%">x</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%" rspace="0.111em">=</mo><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mn mathsize="120%">0</mn></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%" rspace="0.055em">+</mo><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mn mathsize="120%">0</mn><mi mathsize="120%">x</mi></msubsup><mi mathsize="120%">f</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">F(x)=\int_{-x}^{x}f=\int_{-x}^{0}f+\int_{0}^{x}f</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">by Theorem </span><a href="Ch4.S5.html#Thmthm22c" title="Proposition 4.22 ‣ 4.5 Elementary properties of the Riemann integral ‣ Chapter 4 Integration ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">4.22</span></a><span class="ltx_text" style="font-size:120%;">.
+Then, by Theorem </span><a href="Ch5.S1.html#Thmthm1e" title="Theorem 5.1 (Fundamental Theorem of the Calculus version 1) ‣ 5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.1</span></a><span class="ltx_text" style="font-size:120%;">, Corollary </span><a href="Ch5.S1.html#Thmthm2d" title="Corollary 5.2 ‣ 5.1 The first form and the Intermediate Value Theorem ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.2</span></a><span class="ltx_text" style="font-size:120%;">, and the Chain Rule</span></p>
+<div id="Ch5.Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex22.m1" class="ltx_Math" alttext="F^{\prime}(x)=-(-f(-x))+f(x)=f(-x)+f(x)=0," display="block"><semantics><mrow><mrow><mrow><msup><mi mathsize="120%">F</mi><mo mathsize="120%">′</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mo mathsize="120%">−</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">+</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">x</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">+</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mo mathsize="120%">,</mo></mrow><annotation encoding="application/x-tex">F^{\prime}(x)=-(-f(-x))+f(x)=f(-x)+f(x)=0,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">since </span><math id="p6.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is odd. Hence, by Proposition </span><a href="Ch3.S2.html#Thmthm11b" title="Proposition 3.11 ‣ 3.2 The Mean Value Theorem ‣ Chapter 3 Functions differentiable on an interval ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">3.11</span></a><span class="ltx_text" style="font-size:120%;">, </span><math id="p6.m3" class="ltx_Math" alttext="F" display="inline"><semantics><mi mathsize="120%">F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is contant,
+so</span></p>
+<div id="Ch5.Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex23.m1" class="ltx_Math" alttext="\int_{-a}^{a}f=F(a)=F(0)=0." display="block"><semantics><mrow><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">a</mi></mrow><mi mathsize="120%">a</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">a</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mi mathsize="120%">F</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mn mathsize="120%">0</mn><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int_{-a}^{a}f=F(a)=F(0)=0.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">∎</span></p>
+</div>
+</div>
+<div id="Thmthm7d" class="ltx_theorem ltx_theorem_eg">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem" style="font-size:120%;"><span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Example 5.7</span></span></h6>
+<div id="Thmthm7d.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm7d.p1.m1" class="ltx_Math" alttext="f(x)=\sin x\sin(x^{2})" display="inline"><semantics><mrow><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo mathsize="120%">=</mo><mrow><mrow><mi mathsize="120%">sin</mi><mo lspace="0.167em">⁡</mo><mi mathsize="120%">x</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi mathsize="120%">sin</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mi mathsize="120%">x</mi><mn mathsize="120%">2</mn></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\sin x\sin(x^{2})</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is an odd continuous function,
+so</span></p>
+<div id="Ch5.Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex24.m1" class="ltx_Math" alttext="\int_{-\pi}^{\pi}f=0" display="block"><semantics><mrow><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mo mathsize="120%">−</mo><mi mathsize="120%">π</mi></mrow><mi mathsize="120%">π</mi></msubsup><mi mathsize="120%">f</mi></mrow><mo mathsize="120%">=</mo><mn mathsize="120%">0</mn></mrow><annotation encoding="application/x-tex">\int_{-\pi}^{\pi}f=0</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">by Proposition </span><a href="#Thmthm6d" title="Proposition 5.6 ‣ 5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.6</span></a><span class="ltx_text" style="font-size:120%;">. Note that we deduced this from the Fundamental Theorem of the Calculus even though we have no idea how to write down an antiderivative of </span><math id="Thmthm7d.p1.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">Having established Theorem </span><a href="#Thmthm4d" title="Theorem 5.4 (Fundamental Theorem of the Calculus version 2) ‣ 5.2 The second form and a practical method for computing integrals ‣ Chapter 5 The Fundamental Theorem of the Calculus ‣ MATH2017 Real Analysis" class="ltx_ref" style="font-size:120%;"><span class="ltx_text ltx_ref_tag">5.4</span></a><span class="ltx_text" style="font-size:120%;">, we see that we can explicitly
+compute</span></p>
+<div id="Ch5.Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex25.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)\,dx" display="block"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)\,dx</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">if we can think of an </span><span class="ltx_text ltx_font_bold" style="font-size:120%;">antiderivative</span><span class="ltx_text" style="font-size:120%;">
+of </span><math id="p7.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, that is, any function
+whose </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">derivative</span><span class="ltx_text" style="font-size:120%;"> is </span><math id="p7.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. This trick is so pervasive in integral
+calculus that it leads the unwary to identify </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">integration</span><span class="ltx_text" style="font-size:120%;"> of
+</span><math id="p7.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> (that is,
+the process of computing a Riemann integral </span><math id="p7.m4" class="ltx_Math" alttext="\int_{a}^{b}f" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">)
+with the process of writing
+down an antiderivative of </span><math id="p7.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+Indeed, it is common practice to call an antiderivative of </span><math id="p7.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">
+an </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">indefinite integral</span><span class="ltx_text" style="font-size:120%;"> of </span><math id="p7.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and to denote any such function by
+the symbol</span></p>
+<div id="Ch5.Ex26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex26.m1" class="ltx_Math" alttext="\int f(x)\,dx." display="block"><semantics><mrow><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><mo lspace="0em" mathsize="120%">.</mo></mrow><annotation encoding="application/x-tex">\int f(x)\,dx.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">This notation has some practical advantages, but it also, unfortunately,
+generates a huge amount of confusion. Note that</span></p>
+<div id="Ch5.Ex27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch5.Ex27.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)\,dx" display="block"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)\,dx</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">is a single number and that its </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">definition</span><span class="ltx_text" style="font-size:120%;"> has nothing whatsoever
+to do with antiderivatives of </span><math id="p7.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">: it is the unique real number
+which is no greater than any upper Riemann sum of </span><math id="p7.m9" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> on </span><math id="p7.m10" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and no less
+than any lower Riemann sum of </span><math id="p7.m11" class="ltx_Math" alttext="f" display="inline"><semantics><mi mathsize="120%">f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> on </span><math id="p7.m12" class="ltx_Math" alttext="[a,b]" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">[</mo><mi mathsize="120%">a</mi><mo mathsize="120%">,</mo><mi mathsize="120%">b</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><annotation encoding="application/x-tex">[a,b]</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. In particular, it is </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">not</span><span class="ltx_text" style="font-size:120%;">
+a function of the “variable” </span><math id="p7.m13" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. Indeed, we could equally well have written
+it </span><math id="p7.m14" class="ltx_Math" alttext="\int_{a}^{b}f(y)\,dy" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">y</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">y</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(y)\,dy</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> or </span><math id="p7.m15" class="ltx_Math" alttext="\int_{a}^{b}f(\Gamma_{\widehat{\aleph}})\,d\Gamma_{\widehat{\aleph}}" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi mathsize="120%" mathvariant="normal">Γ</mi><mover accent="true"><mi mathsize="120%" mathvariant="normal">ℵ</mi><mo mathsize="120%">^</mo></mover></msub><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><msub><mi mathsize="120%" mathvariant="normal">Γ</mi><mover accent="true"><mi mathsize="120%" mathvariant="normal">ℵ</mi><mo mathsize="120%">^</mo></mover></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(\Gamma_{\widehat{\aleph}})\,d\Gamma_{\widehat{\aleph}}</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, which is one reason to prefer the simpler
+notation </span><math id="p7.m16" class="ltx_Math" alttext="\int_{a}^{b}f" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">. It </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">is</span><span class="ltx_text" style="font-size:120%;"> a function of </span><math id="p7.m17" class="ltx_Math" alttext="a" display="inline"><semantics><mi mathsize="120%">a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and </span><math id="p7.m18" class="ltx_Math" alttext="b" display="inline"><semantics><mi mathsize="120%">b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, however.</span></p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text" style="font-size:120%;">By contrast, </span><math id="p8.m1" class="ltx_Math" alttext="\int f(x)\,dx" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo mathsize="120%" rspace="0em">𝑑</mo><mi mathsize="120%">x</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\int f(x)\,dx</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> is just a (slightly
+ambiguous) symbol denoting any function whose derivative (at </span><math id="p8.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">) is </span><math id="p8.m3" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi mathsize="120%">f</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathsize="120%">x</mi><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">.
+It </span><span class="ltx_text ltx_font_italic" style="font-size:120%;">is</span><span class="ltx_text" style="font-size:120%;"> a function of </span><math id="p8.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi mathsize="120%">x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math><span class="ltx_text" style="font-size:120%;">, not a single number, and its
+</span><span class="ltx_text ltx_font_italic" style="font-size:120%;">definition</span><span class="ltx_text" style="font-size:120%;"> has nothing to do with Riemann sums. That these two things
+turn out to be closely related is (as its name suggests) a very
+important theorem: the Fundamental Theorem of the Calculus. To
+understand calculus properly it is important to maintain a clear
+conceptual distinction between the Riemann integral </span><math id="p8.m5" class="ltx_Math" alttext="\int_{a}^{b}f" display="inline"><semantics><mrow><msubsup><mo maxsize="120%" minsize="120%" stretchy="true">∫</mo><mi mathsize="120%">a</mi><mi mathsize="120%">b</mi></msubsup><mi mathsize="120%">f</mi></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f</annotation></semantics></math><span class="ltx_text" style="font-size:120%;"> and
+any antiderivative that one might use to compute it.</span></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch5.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "notes.pdf", "PDF" ], ],
+                  "search": false,
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
