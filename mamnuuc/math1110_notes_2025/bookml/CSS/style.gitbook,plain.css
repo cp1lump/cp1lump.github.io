@@ -1,0 +1,209 @@
+/*
+
+  BookML: bookdown flavoured GitBook port for LaTeXML
+  Copyright (C) 2021-23 Vincenzo Mantova <v.l.mantova@leeds.ac.uk>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+/* Responsive margins are based on the simple rule 1.5% ~ 1em */
+/* Reduce margins on lists and ensure consistent positioning of the tags */
+/* TODO: this only works for ltr text, implement rtl alternative */
+.ltx_itemize, .ltx_enumerate {
+  margin-left: 0;
+  padding-left: max(min(3.75%, 2.5em), 1.5em) !important;
+  /* typical UA default is 40px = 2.5em */ }
+
+li.ltx_item .ltx_tag {
+  box-sizing: border-box;
+  min-width: max(min(3.75%, 2.5em), 1.5em);
+  /* same as padding-left */
+  margin-left: min(max(-3.75%, -2.5em), -1.5em); }
+
+ul.ltx_itemize > li.ltx_item > .ltx_tag {
+  padding-right: max(min(1.05%, 0.7em), 0.4em);
+  /* this seems the closest to default UA <ul>'s */ }
+
+ol.ltx_enumerate > li.ltx_item > .ltx_tag {
+  padding-right: max(min(0.5%, 0.3em), 0.2em);
+  /* this seems the closest to default UA <ol>'s */ }
+
+/* tweak margins within list items */
+.book .book-body .page-wrapper .page-inner section.normal li.ltx_item > .ltx_para > .ltx_p {
+  margin-bottom: 0em; }
+
+/* Reduce margins on listings and ensure content fits the container */
+.ltx_listing {
+  margin-right: 0;
+  max-width: 100%;
+  width: 100%; }
+
+/* Enlarge blockquote's */
+.ltx_quote {
+  max-width: 100%; }
+
+/* Ensure that oversized figures are scrollable */
+.ltx_figure {
+  overflow-x: auto;
+  overflow-y: visible; }
+
+/* Reduce margins smoothly on small screens */
+.ltx_abstract {
+  margin-left: min(6%, 4em);
+  margin-right: min(6%, 4em); }
+
+dl.ltx_description dd {
+  margin-left: min(7.5%, 5em); }
+
+.ltx_toclist {
+  padding-inline-start: min(3.75%, 2.5em);
+  padding-left: min(3.75%, 2.5em) !important; }
+
+/* Force no indentation */
+.ltx_p {
+  text-indent: 0em !important; }
+
+/* Remove margins from first/last paragraphs in other containers */
+/* The list of containers is likely not exhaustive */
+td > .ltx_p:first-child,
+th > .ltx_p:first-child {
+  margin-top: 0 !important; }
+
+td > .ltx_p:last-child,
+th > .ltx_p:last-child {
+  margin-bottom: 0 !important; }
+
+/* Improve alignment of numbers in all tags (enumerate, equation numbers, ...) */
+.ltx_tag {
+  font-variant-numeric: tabular-nums; }
+
+/* use CSS grids for equations */
+.ltx_eqn_div, .ltx_eqn_table {
+  width: 100%;
+  max-width: 100%;
+  --bml-eqn-eqno: 0;
+  display: grid;
+  align-items: baseline;
+  justify-items: stretch;
+  grid-auto-flow: dense;
+  grid-template-columns: [leqno] var(--bml-eqn-eqno) [leftpad] var(--bml-eqn-leftpad) [eqn] var(--bml-eqn-columns) [rightpad] var(--bml-eqn-rightpad) [reqno] var(--bml-eqn-eqno); }
+  .ltx_eqn_div.bml_eqn_has_eqno, .ltx_eqn_table.bml_eqn_has_eqno {
+    --bml-eqn-eqno: auto; }
+  .ltx_fleqn .ltx_eqn_div, .ltx_fleqn .ltx_eqn_table {
+    --bml-eqn-leftpad: 0;
+    --bml-eqn-eqno: minmax(2em,auto); }
+
+.ltx_eqn_div {
+  --bml-eqn-leftpad: 0;
+  --bml-eqn-rightpad: 0;
+  --bml-eqn-columns: 1fr; }
+  .ltx_eqn_div .ltx_eqn_div {
+    grid-template-columns: subgrid;
+    grid-column-start: leftpad;
+    grid-column-end: reqno; }
+    .ltx_eqn_div .ltx_eqn_div.bml_eqn_has_eqno {
+      grid-column-start: 1;
+      grid-column-end: -1; }
+  .ltx_fleqn .ltx_eqn_div {
+    --bml-eqn-rightpad: 1fr;
+    --bml-eqn-columns: auto;
+    /* TODO: offload left alignment to MathJax if possible */ }
+  .ltx_eqn_div > span {
+    grid-column-start: eqn; }
+  .ltx_eqn_div > span.ltx_tag {
+    justify-self: end;
+    text-align: right;
+    justify-self: stretch;
+    grid-column-start: leqno;
+    visibility: hidden; }
+    .ltx_fleqn .ltx_eqn_div > span.ltx_tag {
+      display: none; }
+    .ltx_eqn_div > span.ltx_tag:first-child {
+      grid-column-start: reqno;
+      visibility: initial;
+      display: initial; }
+    .ltx_leqno .ltx_eqn_div > span.ltx_tag {
+      justify-self: start;
+      text-align: left;
+      grid-column-start: reqno; }
+      .ltx_leqno .ltx_eqn_div > span.ltx_tag:first-child {
+        grid-column-start: leqno; }
+
+.ltx_eqn_table {
+  --bml-eqn-leftpad: 1fr;
+  --bml-eqn-rightpad: 1fr;
+  --bml-eqn-columns: repeat(100, auto);
+  /* unsure what is the maximum number of columns supported by LaTeX, but surely 100 is enough */ }
+  .ltx_eqn_table > tbody, .ltx_eqn_table > span, .ltx_eqn_table .ltx_eqn_row {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column-start: 1;
+    grid-column-end: -1; }
+
+.ltx_eqn_row {
+  grid-auto-flow: dense;
+  align-items: baseline; }
+  .ltx_eqn_row::before {
+    content: "";
+    display: flex;
+    /* Chrome complains otherwise, not sure why */
+    grid-column-start: leqno;
+    grid-column-end: eqn; }
+    .ltx_eqn_table.bml_eqn_has_eqno .ltx_eqn_row::before {
+      grid-column-start: leftpad; }
+      .ltx_fleqn .ltx_eqn_table.bml_eqn_has_eqno .ltx_eqn_row::before {
+        grid-column-start: leqno; }
+      .ltx_fleqn.ltx_leqno .ltx_eqn_table.bml_eqn_has_eqno .ltx_eqn_row::before {
+        grid-column-start: leftpad; }
+  .ltx_eqn_row.ltx_intertext::before {
+    display: none; }
+  .ltx_eqn_row.ltx_intertext > .ltx_eqn_cell {
+    grid-column-start: 1;
+    grid-column-end: -1; }
+  .ltx_eqn_row.bml_eqn_row_constraint::before {
+    display: none; }
+  .ltx_eqn_row.bml_eqn_row_constraint > .ltx_eqn_cell {
+    grid-column-start: leftpad;
+    grid-column-end: reqno; }
+
+.ltx_eqn_cell.ltx_eqn_eqno {
+  max-width: initial;
+  justify-self: end;
+  text-align: right;
+  grid-column-start: leqno;
+  visibility: hidden; }
+  .ltx_fleqn .ltx_eqn_cell.ltx_eqn_eqno {
+    display: none;
+    /* covered by .ltx_eqn_row::before or, if .ltx_leqno, by &:first-child */ }
+  .ltx_eqn_cell.ltx_eqn_eqno:first-child {
+    grid-column-start: reqno;
+    visibility: visible;
+    display: initial; }
+  .ltx_leqno .ltx_eqn_cell.ltx_eqn_eqno {
+    grid-column-start: reqno;
+    justify-self: start;
+    text-align: left; }
+    .ltx_leqno .ltx_eqn_cell.ltx_eqn_eqno:first-child {
+      grid-column-start: leqno; }
+  .ltx_eqn_cell.ltx_eqn_eqno .ltx_tag {
+    float: initial; }
+
+.ltx_eqn_cell:not(.ltx_eqn_eqno).ltx_align_left + .ltx_eqn_cell.ltx_align_right {
+  padding-left: 3em; }
+
+.ltx_eqn_cell[colspan], .ltx_eqn_div > span[colspan] {
+  grid-column-end: span var(--bml-eqn-colspan, 1); }
+
+.ltx_eqn_cell[rowspan], .ltx_eqn_div > span[rowspan] {
+  grid-row-end: span var(--bml-eqn-rowspan, 1); }
